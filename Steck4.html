@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="de">
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steckbriefaufgaben</title>
+  
+</head>
+<body style="background-color: white;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Steckbriefaufgaben</p> 
+
+    <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
+		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+
+<!--//Aufgabe 107-->                     
+                
+    <pre><b><p class="Aufgabe">Aufgabe 107
+
+Der Graph einer punktsymmetrischen ganzrationalen 
+Funktion 5. Grades hat in (0|0) einen Sattelpunkt 
+und in (2|-16/15) einen Tiefpunkt. 
+Wie lautet seine Funktionsgleichung?
+
+<img src="Aufgabe107.jpg" >
+
+<button  onclick="window.open('Steck_Aufgabe107.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 108-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 108
+
+Graph einer ganzrationalen Funktion 5. Grades 
+geht durch (0|0), hat in (-1|-2/3) einen 
+Wendepunkt mit derSteigung 1,25 und einen bei 
+(-2|-4/3). 
+Wie lautet seine Funktionsgleichung?
+
+f<sub>(x)</sub> = 0,25x<sup>5</sup> + <input type="text" id="Eintrag108" maxlength="4" size="1" style= background-color:yellow ></input> x<sup>4</sup> + (5/3)x<sup>3</sup> <button id="Pruef108" onclick="Aufgabe108()">Prüfen</button></p></pre>
+
+                      <script>
+                        function Aufgabe108() { 
+                                                
+                          if (Eintrag108.value=="1,25") {alert("Richtig"); document.getElementById("Pruef108").disabled= true;
+                          }  
+                           
+                          else if (Eintrag108.value!=="1,25" && Eintrag108.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag108").value="1,25"; window.open('Steck_Aufgabe108.html');           
+                          document.getElementById("Pruef108").disabled= true;}
+                               
+                          else if (Eintrag108.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+<!--//Aufgabe 109-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 109
+
+Der Graph einer ganzrationalen Funktion 6. Grades 
+geht durch die Punkte (-1|4) und (2|49), hat in 
+(0|1) einen Wendepunkt mit waagerechter Tangente 
+und in (1|0) einen Tiefpunkt.
+Wie lautet seine Funktionsgleichung?
+
+<img src="Aufgabe109.jpg" >
+
+<button  onclick="window.open('Steck_Aufgabe109.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 110-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 110
+
+Der Graph einer ganzrationalen Funktion 6. Grades 
+berührt die x-Achse im Nullpunkt, und hat in (1|1) 
+und (-1|1) Wendepunkte mit waagerechten Tangenten. 
+Wie lautet seine Funktionsgleichung?
+
+f<sub>(x)</sub> = x<sup>6</sup> - <input type="text" id="Eintrag110" maxlength="1" size="1" style= background-color:yellow ></input> x<sup>4</sup> + 3x<sup>2</sup> <button id="Pruef110" onclick="Aufgabe110()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe110() { 
+                                                
+                          if (Eintrag110.value=="3") {alert("Richtig"); document.getElementById("Pruef110").disabled= true;
+                          }  
+                           
+                          else if (Eintrag110.value!=="3" && Eintrag110.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag110").value="3"; window.open('Steck_Aufgabe110.html');           
+                          document.getElementById("Pruef110").disabled= true;}
+                               
+                          else if (Eintrag110.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 111-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 111
+
+Der Graph einer zu (0|0) punktsymmetrischen ganzrationalen 
+Funktion 5. Grades hat in (1|1) die Steigung 0 und in 
+(2|f(2)) einen Wendepunkt. 
+Wie lautet seine Funktionsgleichung?
+
+<img src="Aufgabe111.jpg" >
+
+<button  onclick="window.open('Steck_Aufgabe111.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 112-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 112
+
+Der Graph einer zu (0|0) punktsymmetrischen ganzrationalen 
+Funktion 5. Grades hat in (0|0) die Tangente y = 7x und in
+(1|0) einen Wendepunkt. Wie lautet seine Funktionsgleichung?
+
+f<sub>(x)</sub> = <input type="text" id="Eintrag112" maxlength="1" size="1" style= background-color:yellow ></input> x<sup>5</sup> - 10x<sup>3</sup> + 7x <button id="Pruef112" onclick="Aufgabe112()">Prüfen</button></p></pre>
+
+                       <script>
+                        function Aufgabe112() { 
+                                                
+                          if (Eintrag112.value=="3") {alert("Richtig"); document.getElementById("Pruef112").disabled= true;
+                          }  
+                           
+                          else if (Eintrag112.value!=="3" && Eintrag112.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag112").value="3"; window.open('Steck_Aufgabe112.html');           
+                          document.getElementById("Pruef112").disabled= true;}
+                               
+                          else if (Eintrag112.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 113-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 113
+
+Der Graph einer zu (0|0) punktsymmetrischen 
+ganzrationalen Funktion 5. Grades hat in (-1|1) 
+einen Wendepunkt mit der Steigung 3. 
+Wie lautet seine Funktionsgleichung?
+
+<img src="Aufgabe113.jpg" > 
+
+<button  onclick="window.open('Steck_Aufgabe113.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 114-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 114
+
+Der Graph einer zu (0|0) punktsymmetrischen 
+ganzrationalen Funktion 5. Grades hat im 
+Nullpunkt die Steigung 2 und in (-1|0) 
+einen Wendepunkt. 
+Wie lautet seine Funktionsgleichung?
+
+f<sub>(x)</sub> = ( <input type="text" id="Eintrag114" maxlength="1" size="1" style= background-color:yellow ></input> /7)x<sup>5</sup> - (20/7)x<sup>3</sup> + 2x <button id="Pruef114" onclick="Aufgabe114()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe114() { 
+                                                
+                          if (Eintrag114.value=="6") {alert("Richtig"); document.getElementById("Pruef114").disabled= true;
+                          }  
+                           
+                          else if (Eintrag114.value!=="6" && Eintrag114.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag114").value="6"; window.open('Steck_Aufgabe114.html');           
+                          document.getElementById("Pruef114").disabled= true;}
+                               
+                          else if (Eintrag114.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>   
+                      
+<!--//Aufgabe 115-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 115
+
+Der Graph einer ganzrationalen Funktion 5. Grades 
+berührt die x-Achse bei 1 und 2, wechselt bei 3 
+das Vorzeichen und geht durch (0|24). 
+Wie lautet seine Funktionsgleichung?
+
+<img src="Aufgabe115.jpg" >
+
+<button  onclick="window.open('Steck_Aufgabe115.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 116-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 116
+
+Der Graph einer ganzrationalen Funktion 5. Grades 
+geht durch den Punkt (0|1), berührt die x-Achse 
+bei -5 und wechselt bei x = 1, -2 und -3 das 
+Vorzeichen. Wie lautet seine Funktionsgleichung?
+
+f<sub>(x)</sub> = -(1/20)x<sup>5</sup> - (7/75)x<sup>4</sup> - (11/ <input type="text" id="Eintrag116" maxlength="2" size="1" style= background-color:yellow ></input> )x<sup>3</sup> - (58/75)x<sup>2</sup> +(7/30) + 1 
+
+<button id="Pruef116" onclick="Aufgabe116()">Prüfen</button></p></b></pre>
+
+ 
+                      <script>
+                        function Aufgabe116() { 
+                                                
+                          if (Eintrag116.value=="25") {alert("Richtig"); document.getElementById("Pruef116").disabled= true;
+                          }  
+                           
+                          else if (Eintrag116.value!=="25" && Eintrag116.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag116").value="25"; window.open('Steck_Aufgabe116.html');           
+                          document.getElementById("Pruef116").disabled= true;}
+                               
+                          else if (Eintrag116.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+                    
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script>
+
+          </body></html>

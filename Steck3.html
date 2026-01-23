@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="de">
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steckbriefaufgaben</title>
+  
+</head>
+<body style="background-color: white;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Steckbriefaufgaben</p> 
+
+    <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
+		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+
+  <!--//Aufgabe 81-->                     
+                      
+    <pre><b><p class="Aufgabe">Aufgabe 81
+
+Der Graph einer ganzrationalen Funktion 4. Grades 
+berührt im Punkt (2|0) die x-Achse, hat im Punkt (0|0) 
+einen Wendepunkt, und die Wendetangente schneidet 
+die x-Achse unter einem Winkel von 45°. 
+Wie lautet seine Funktionsgleichung?
+
+<img src="Aufgabe81.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe81.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 82-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 82
+
+Der Graph einer achsensymmetrischen ganzrationalen 
+Funktion 4. Grades hat in (2|0) einen Wendepunkt, 
+und  die Wendetangente hat eine Steigung von -2. 
+Wie lautet seine Funktionsgleichung?
+
+f<sub>(x)</sub> = 0,03125x<sup>4</sup> - <input type="text" id="Eintrag82" maxlength="4" size="1" style= background-color:yellow ></input> x<sup>2</sup> <button id="Pruef82" onclick="Aufgabe82()">Prüfen</button></p></pre>
+
+                      <script>
+                        function Aufgabe82() { 
+                                                
+                          if (Eintrag82.value=="0,75") {alert("Richtig"); document.getElementById("Pruef82").disabled= true;
+                          }  
+                           
+                          else if (Eintrag82.value!=="0,75" && Eintrag82.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag82").value="0,75"; window.open('e-Funkt_Aufgabe82.html');           
+                          document.getElementById("Pruef82").disabled= true;}
+                               
+                          else if (Eintrag82.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 83-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 83
+
+Der Graph einer achsensymmetrischen ganzrationalen 
+Funktion 4. Grades hat in (0|-4) einen Tiefpunkt 
+und berührt die x-Achse bei 2 und -2. 
+Wie lautet seine Funktionsgleichung?
+
+<img src="Aufgabe83.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe83.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 84-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 84
+
+Der Graph einer ganzrationalen Funktion 4. Grades 
+hat einen Wendepunkt bei x = 3, einen im Punkt 
+(-2|-81) mit der Steigung 90 und schneidet die 
+x-Achse bei -1. 
+Wie lautet seine Funktionsgleichung?
+
+f<sub>(x)</sub> = x<sup>4</sup> - 2x<sup>3</sup> - <input type="text" id="Eintrag84" maxlength="2" size="1" style= background-color:yellow ></input> x<sup>2</sup> + 2x + 35 <button id="Pruef84" onclick="Aufgabe84()">Prüfen</button></p></pre>
+
+
+                      <script>
+                        function Aufgabe84() { 
+                                                
+                          if (Eintrag84.value=="36") {alert("Richtig"); document.getElementById("Pruef84").disabled= true;
+                          }  
+                           
+                          else if (Eintrag84.value!=="36" && Eintrag84.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag84").value="36"; window.open('e-Funkt_Aufgabe84.html');           
+                          document.getElementById("Pruef84").disabled= true;}
+                               
+                          else if (Eintrag84.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 85-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 85
+
+Der Graph einer achsensymmetrischen ganzrationalen 
+Funktion 4. Grades hat in (2|0) einen Wendepunkt 
+mit der Steigung - 4/3.
+Wie lautet seine Funktionsgleichung?
+
+<img src="Aufgabe85.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe85.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 88-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 86
+
+Der Graph einer achsensymmetrischen ganzrationalen 
+Funktion 4. Grades geht durch den Punkt (0|-4) und 
+hat in (-4|0) eine waagerechte Tangente. 
+Wie lautet seine Funktionsgleichung?
+
+f<sub>(x)</sub> = - (1/ <input type="text" id="Eintrag86" maxlength="2" size="1" style= background-color:yellow ></input> )x<sup>4</sup> + 0,5x<sup>2</sup> - 4 <button id="Pruef86" onclick="Aufgabe86()">Prüfen</button></p></pre>
+
+
+                      <script>
+                        function Aufgabe86() { 
+                                                
+                          if (Eintrag86.value=="64") {alert("Richtig"); document.getElementById("Pruef86").disabled= true;
+                          }  
+                           
+                          else if (Eintrag86.value!=="64" && Eintrag86.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag86").value="64"; window.open('e-Funkt_Aufgabe86.html');           
+                          document.getElementById("Pruef86").disabled= true;}
+                               
+                          else if (Eintrag86.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 87-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 87
+
+Der Graph einer ganzrationalen Funktion 4. Grades 
+hat im Wendepunkt (0|0) und an der Stelle x = 6 
+waagerechte Tangenten und schneidet die x-Achse 
+an einer weiteren Stelle mit der Steigung -8. 
+Wie lautet seine Funktionsgleichung?
+
+<img src="Aufgabe87a.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe87.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 88-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 88
+
+Der Graph einer ganzrationalen Funktion 4. Grades 
+hat im Punkt (0|0) eine waagerechte Tangente und 
+in (-2|2) einen Sattelpunkt. 
+Wie lautet seine Funktionsgleichung?
+
+f<sub>(x)</sub> = (3/8)x<sup>4</sup> - 2x<sup>3</sup> + <input type="text" id="Eintrag88" maxlength="1" size="1" style= background-color:yellow ></input> x<sup>2</sup> <button id="Pruef88" onclick="Aufgabe88()">Prüfen</button></p></pre>
+
+                      <script>
+                        function Aufgabe88() { 
+                                                
+                          if (Eintrag88.value=="3") {alert("Richtig"); document.getElementById("Pruef88").disabled= true;
+                          }  
+                           
+                          else if (Eintrag88.value!=="3" && Eintrag88.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag88").value="3"; window.open('e-Funkt_Aufgabe88.html');           
+                          document.getElementById("Pruef88").disabled= true;}
+                               
+                          else if (Eintrag88.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 89-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 89
+
+Der Graph einer achsensymmetrischen ganzrationalen 
+Funktion 4. Grades hat im Wendepunkt (3|31,5) die 
+Steigung -18.
+Wie lautet seine Funktionsgleichung?
+
+<img src="Aufgabe89.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe89.html');" >Lösung</button></p></pre>    
+
+<!--//Aufgabe 90-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 90
+
+Die zweite Ableitung einer ganzrationalen 
+Funktion 4. Grades lautet 12x<sup>2</sup> -6. 
+Ihr Graph geht durch (1|2) und (-2|3). 
+Wie lautet seine Funktionsgleichung?
+
+f<sub>(x)</sub> = x<sup>4</sup> - 3x<sup>2</sup> + ( <input type="text" id="Eintrag90" maxlength="1" size="1" style= background-color:yellow ></input> /3)x + 7/3 <button id="Pruef90" onclick="Aufgabe90()">Prüfen</button></p></pre>
+
+
+                      <script>
+                        function Aufgabe90() { 
+                                                
+                          if (Eintrag90.value=="5") {alert("Richtig"); document.getElementById("Pruef90").disabled= true;
+                          }  
+                           
+                          else if (Eintrag90.value!=="5" && Eintrag90.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag90").value="5"; window.open('e-Funkt_Aufgabe90.html');           
+                          document.getElementById("Pruef90").disabled= true;}
+                               
+                          else if (Eintrag90.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 91-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 91
+
+Der Graph einer achsensymmetrischen ganzrationalen 
+Funktion 4. Grades hat im Punkt (2|0) die Steigung 2 
+und bei x = -1 einen Wendepunkt. 
+Wie lautet seine Funktionsgleichung?
+
+<img src="Aufgabe91.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe91.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 92-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 92
+
+Der Graph einer ganzrationalen Funktion 4. Grades 
+hat im Punkt (0|0) die Wendetangente y = x und 
+im Punkt (2|4) die Steigung 0. 
+Wie lautet seine Funktionsgleichung?
+
+f<sub>(x)</sub> = -0,5x<sup>4</sup> + <input type="text" id="Eintrag92" maxlength="4" size="1" style= background-color:yellow ></input> x<sup>3</sup> + x <button id="Pruef92" onclick="Aufgabe92()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe92() { 
+                                                
+                          if (Eintrag92.value=="1,25") {alert("Richtig"); document.getElementById("Pruef92").disabled= true;
+                          }  
+                           
+                          else if (Eintrag92.value!=="1,25" && Eintrag92.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag92").value="1,25"; window.open('e-Funkt_Aufgabe92.html');           
+                          document.getElementById("Pruef92").disabled= true;}
+                               
+                          else if (Eintrag92.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 93-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 93
+
+Der Graph einer achsensymmetrischen ganzrationalen 
+Funktion 4. Grades geht durch den Koordinatenursprung 
+und schneidet die x-Achse an der Stelle x = 3 mit 
+der Steigung -48. 
+Wie lautet seine Funktionsgleichung?
+
+<img src="Aufgabe93.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe93.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 94-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 94
+
+Der Graph einer achsensymmetrischen ganzrationalen 
+Funktion 4. Grades hat in (2|- 20/3) einen 
+Wendepunkt mit einer Steigung von -16/3. 
+Wie lautet seine Funktionsgleichung?
+
+f<sub>(x)</sub> = (1/12)x<sup>4</sup> - <input type="text" id="Eintrag94" maxlength="1" size="1" style= background-color:yellow ></input> x<sup>2</sup> <button id="Pruef94" onclick="Aufgabe94()">Prüfen</button></p></pre>
+ 
+ 
+                      <script>
+                        function Aufgabe94() { 
+                                                
+                          if (Eintrag94.value=="2") {alert("Richtig"); document.getElementById("Pruef94").disabled= true;
+                          }  
+                           
+                          else if (Eintrag94.value!=="2" && Eintrag94.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag94").value="2"; window.open('e-Funkt_Aufgabe94.html');           
+                          document.getElementById("Pruef94").disabled= true;}
+                               
+                          else if (Eintrag94.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+<!--//Aufgabe 95-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 95
+
+Der Graph einer ganzrationalen Funktion 4. Grades 
+hat im Punkt (0|0) einen Sattelpunkt und im Punkt 
+(1|1) einen Wendepunkt. 
+Wie lautet seine Funktionsgleichung?
+
+<img src="Aufgabe95.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe95.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 96-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 96
+
+Der Graph einer ganzrationalen Funktion 4. Grades 
+berührt an der Stelle x = -1 die x-Achse und hat 
+in (2|6,75) einen Sattelpunkt. 
+Wie lautet seine Funktionsgleichung?
+
+f<sub>(x)</sub> = 0,25x<sup>4</sup> - x<sup>3</sup> + 4x + <input type="text" id="Eintrag96" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef96" onclick="Aufgabe96()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe96() { 
+                                                
+                          if (Eintrag96.value=="2,75") {alert("Richtig"); document.getElementById("Pruef96").disabled= true;
+                          }  
+                           
+                          else if (Eintrag96.value!=="2,75" && Eintrag96.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag96").value="2,75"; window.open('e-Funkt_Aufgabe96.html');           
+                          document.getElementById("Pruef96").disabled= true;}
+                               
+                          else if (Eintrag96.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>  
+
+<!--//Aufgabe 97-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 97
+
+Der Graph einer achsensymmetrischen ganzrationalen 
+Funktion 4. Grades geht durch den Punkt (0|2) und 
+hat in (1|0) einen Tiefpunkt. 
+Wie lautet seine Funktionsgleichung?
+
+<img src="Aufgabe97.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe97.html');" >Lösung</button></p></pre>   
+
+ <!--//Aufgabe 98-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 98
+
+Der Graph einer ganzrationalen Funktion 4. Grades 
+geht durch den Punkt (-2|-4), hat im Koordinaten-
+ursprung  ein relatives Minimum und im Punkt (-1|0) 
+die Steigung 3.
+Wie lautet seine Funktionsgleichung?
+
+f<sub>(x)</sub> = 2x<sup>4</sup> + <input type="text" id="Eintrag98" maxlength="1" size="1" style= background-color:yellow ></input> x<sup>3</sup> + 5x<sup>2</sup> <button id="Pruef98" onclick="Aufgabe98()">Prüfen</button></p></pre>
+
+                      <script>
+                        function Aufgabe98() { 
+                                                
+                          if (Eintrag98.value=="7") {alert("Richtig"); document.getElementById("Pruef98").disabled= true;
+                          }  
+                           
+                          else if (Eintrag98.value!=="7" && Eintrag98.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag98").value="7"; window.open('e-Funkt_Aufgabe98.html');           
+                          document.getElementById("Pruef98").disabled= true;}
+                               
+                          else if (Eintrag98.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 99-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 99
+
+Der Graph einer achsensymmetrischen ganzrationalen 
+Funktion 4. Grades hat Wendepunkte, die jeweils 
+eine Einheit von der y-Achse und 1,5 Einheiten von 
+der x-Achse entfernt liegen und ein relatives 
+Maximum im Punkt (0|4). 
+Wie lautet seine Funktionsgleichung?
+
+<img src="Aufgabe99.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe99.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 100-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 100
+
+einer achsensymmetrischen ganzrationalen Funktion 
+4. Grades berührt bei x = 2 die x-Achse und geht 
+durch den Punkt (0|8). 
+Wie lautet seine Funktionsgleichung?
+
+f<sub>(x)</sub> = <input type="text" id="Eintrag100" maxlength="3" size="1" style= background-color:yellow ></input> x<sup>4</sup> + 4x<sup>2</sup> + 8 <button id="Pruef100" onclick="Aufgabe100()">Prüfen</button></p></pre>
+
+
+                      <script>
+                        function Aufgabe100() { 
+                                                
+                          if (Eintrag100.value=="0,5") {alert("Richtig"); document.getElementById("Pruef100").disabled= true;
+                          }  
+                           
+                          else if (Eintrag100.value!=="0,5" && Eintrag100.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag100").value="0,5"; window.open('e-Funkt_Aufgabe100.html');           
+                          document.getElementById("Pruef100").disabled= true;}
+                               
+                          else if (Eintrag100.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 101-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 101
+
+Der Graph einer achsensymmetrischen ganzrationalen 
+Funktion 4. Grades hat Nullstellen bei -5 und 3 und 
+geht durch denPunkt (0|1). 
+Wie lautet seine Funktionsgleichung? 
+
+<img src="Aufgabe101.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe101.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 102-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 102
+
+Der Graph einer ganzrationalen Funktion 4. Grades 
+hat bei (0|0) einen Extremwert und bei (2|0) einen 
+Wendepunkt mit einer zur Geraden y = -4x parallelen 
+Tangente. Wie lautet seine Funktionsgleichung?
+
+f<sub>(x)</sub> = x<sup>4</sup> - <input type="text" id="Eintrag102" maxlength="1" size="1" style= background-color:yellow ></input> x<sup>3</sup> + 6x<sup>2</sup> <button id="Pruef102" onclick="Aufgabe102()">Prüfen</button></p></pre>
+
+
+                      <script>
+                        function Aufgabe102() { 
+                                                
+                          if (Eintrag102.value=="5") {alert("Richtig"); document.getElementById("Pruef102").disabled= true;
+                          }  
+                           
+                          else if (Eintrag102.value!=="5" && Eintrag102.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag102").value="5"; window.open('e-Funkt_Aufgabe102.html');           
+                          document.getElementById("Pruef102").disabled= true;}
+                               
+                          else if (Eintrag102.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 103-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 103
+
+Von einer ganzrationalen Funktion 4. Grades 
+sind bekannt: 
+f<sub>(0)</sub> = 0, f<sub>(5)</sub> = 125, f'<sub>(1)</sub> = 55, 
+f''<sub>(0)</sub> = 90 und f'''<sub>(0)</sub> = 78.
+Wie lautet die Funktionsgleichung?
+
+<img src="Aufgabe103.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe103.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 104-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 104
+
+Der Graph einer ganzrationalen Funktion 4. Grades 
+schneidet die y-Achse bei 4, berührt die x-Achse 
+bei x = 2 und hat im Punkt (1|2,25) die Steigung -3. 
+Wie lautet seine Funktionsgleichung?
+
+f<sub>(x)</sub> = <input type="text" id="Eintrag104" maxlength="4" size="1" style= background-color:yellow ></input> x<sup>4</sup> - 2x<sup>2</sup> + 4 <button id="Pruef104" onclick="Aufgabe104()">Prüfen</button></p></pre>
+
+                      <script>
+                        function Aufgabe104() { 
+                                                
+                          if (Eintrag104.value=="0,25") {alert("Richtig"); document.getElementById("Pruef104").disabled= true;
+                          }  
+                           
+                          else if (Eintrag104.value!=="0,25" && Eintrag104.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag104").value="0,25"; window.open('e-Funkt_Aufgabe104.html');           
+                          document.getElementById("Pruef104").disabled= true;}
+                               
+                          else if (Eintrag104.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 105-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 105
+
+Der Graph einer achsensymmetrischen ganzrationalen 
+Funktion 4. Grades geht durch den Punkt 24 auf der
+y-Achse, hat an der Stelle x = 1 die Steigung -36 
+und geht durch (3|240). 
+Wie lautet seine Funktionsgleichung?
+
+<img src="Aufgabe105.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe105.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 106-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 106
+
+Der Graph einer achsensymmetrischen ganzrationalen 
+Funktion 4. Grades hat eine Nullstelle bei x = 4, 
+an der Stelle x = 1 eine Tangente parallel zur 
+Geraden y = -36x + 82 und geht durch den Punkt (3|-35). 
+Wie lautet seine Funktionsgleichung?
+
+f<sub>(x)</sub> = x<sup>4</sup> - <input type="text" id="Eintrag106" maxlength="2" size="1" style= background-color:yellow ></input> x<sup>2</sup> + 64 <button id="Pruef106" onclick="Aufgabe106()">Prüfen</button></p></b></pre>
+
+                      <script>
+                        function Aufgabe106() { 
+                                                
+                          if (Eintrag106.value=="20") {alert("Richtig"); document.getElementById("Pruef106").disabled= true;
+                          }  
+                           
+                          else if (Eintrag106.value!=="20" && Eintrag106.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag106").value="20"; window.open('e-Funkt_Aufgabe106.html');           
+                          document.getElementById("Pruef106").disabled= true;}
+                               
+                          else if (Eintrag106.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+                    
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script>
+        
+         
+
+        </body></html>                           
