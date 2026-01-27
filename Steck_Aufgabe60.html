@@ -1,0 +1,175 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steckbriefaufgaben</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 60
+
+Der Graph einer ganzrationalen Funktion 3. Grades 
+geht durch die Punkte (-2|2), (0|2), (2|2) und 
+berührt die x-Achse. 
+Wie lautet seine Funktionsgleichung? 
+
+<img src="Aufgabe60.jpg" >
+
+Allgemeine Form einer ganzrationalen Funktion 3. Grades: 
+ 
+f<sub>(x)</sub> = ax<sup>3</sup> + bx<sup>2</sup> + cx + d 
+ 
+f’<sub>(x)</sub> = 3ax<sup>2</sup> + 2bx + c 
+ 
+f’’<sub>(x)</sub> = 6ax + 2b 
+
+4 Bedingungen: 
+
+1. Geht durch den Punkt (-2|2) bedeutet: 
+  
+f<sub>(-2)</sub> = 2 --> 
+
+a * (-2)<sup>3</sup> + b * (-2)<sup>2</sup> + c * (-2) + d = 2 --> 
+
+-8a + 4b - 2c + d = 2        I 
+ 
+2. Geht durch den Punkt (0|2) bedeutet: 
+  
+f<sub>(0)</sub> = 2 --> 
+
+a * 0<sup>3</sup> + b * 0<sup>2</sup> + c * 0 + d = 2 --> 
+
+d = 2 
+ 
+3. Geht durch den Punkt (2|2) bedeutet: 
+(d = 2 eingesetzt) 
+  
+f<sub>(2)</sub> = 2 --> 
+
+a * 2<sup>3</sup> + b * 2<sup>2</sup> + c * 2 + 2 = 2 -->  
+ 
+8a + 4b + 2c + 2 = 2 |-2 
+ 
+8a + 4b + 2c = 0        II 
+ 
+4. Berührt die x-Achse bedeutet: 
+ 
+f<sub>(x)</sub> = 0 und f’<sub>(x)</sub> = 0 
+ 
+I (d = 2 eingesetzt) + II 
+
+-8a + 4b - 2c + 2 = 2         
+ 8a + 4b + 2c     = 0   
+----------------------      
+      8b      + 2 = 2 |-2 
+ 
+               8b = 0 |:8 
+ 
+                b = 0 
+ 
+b = 0 in II eingesetzt: 
+ 
+8a + 2c = 0 |-8a 
+ 
+        2c = -8a |:2 
+ 
+         c = -4a 
+ 
+4. Bedingung f’(x) = 0 (c = -4a eingesetzt): 
+ 
+3ax<sup>2</sup> - 4a = 0 |:a     III 
+ 
+      3x<sup>2</sup> = 4 |:3 
+ 
+             4     
+       x<sup>2</sup> = --- |√ 
+             3   
+
+               2
+     x<sub>1,2</sub> = ± ----
+               √3
+ 
+4. Bedingung: 
+
+   2                  2 
+f(----) = 0 oder f(- ----) = 0
+   √3                 √3 
+
+ (c = -4a eingesetzt): 
+
+   2                   
+f(----) = 0 --> 
+   √3 
+         
+        2              2   
+a<sub>1</sub> * (----)<sup>3</sup> - 4a<sub>1</sub> * (----) + 2 = 0 
+       √3              √3 
+  
+   8              8  
+-------- * a<sub>1</sub> - ------ * a<sub>1</sub> + 2 = 0 | * √3 
+ 3 * √3           √3  
+
+  8 
+---- a<sub>1</sub> - 8a<sub>1</sub> + 2 * √3 = 0 |-2 * √3 
+  3 
+ 
+  8       
+---- a<sub>1</sub> - 8a<sub>1</sub> = -2 * √3   |*3 
+  3          
+                         
+8a<sub>1</sub> - 24a<sub>1</sub> = -6 * √3
+ 
+        -16a<sub>1</sub> = -6 * √3 |:-16 
+  
+                 3 
+           a<sub>1</sub> = --- * √3 
+                 8     
+                 
+     2                   
+f(- ----) = 0 --> 
+     √3 
+         
+          2                2   
+a<sub>2</sub> * (- ----)<sup>3</sup> - 4a<sub>2</sub> * (- ----) + 2 = 0 
+         √3                √3 
+  
+     8              8  
+- -------- * a<sub>2</sub> + ------ * a<sub>2</sub> + 2 = 0 | * √3 
+   3 * √3           √3  
+
+    8 
+- ---- a<sub>2</sub> + 8a<sub>2</sub> + 2 * √3 = 0 |-2 * √3 
+    3 
+ 
+    8       
+- ---- a<sub>2</sub> + 8a<sub>2</sub> = -2 * √3   |*3 
+    3          
+                         
+- 8a<sub>2</sub> + 24a<sub>2</sub> = -6 * √3
+ 
+         16a<sub>2</sub> = -6 * √3 |:-16 
+  
+                   3 
+           a<sub>2</sub> = - --- * √3 
+                   8  
+                   
+Gesuchte Funktionsgleichung: 
+ 
+         3                 3    
+f<sub>1(x)</sub> = --- √3 * x<sup>3</sup> - 4 * --- √3 x + 2 =  
+         8                 8   
+  
+<span style="color:red">f<sub>1(x)</sub> = 0,375 √3 * x<sup>3</sup> - 1,5 * √3 x + 2</span> oder 
+ 
+<span style="color:red">f<sub>2(x)</sub> = -0,375 √3 * x<sup>3</sup> + 1,5 * √3 x + 2</span>
+ 
+</b></p></pre></body></html>
