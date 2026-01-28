@@ -1,0 +1,156 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steckbriefaufgaben</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 104
+
+Der Graph einer ganzrationalen Funktion 4. Grades 
+schneidet die y-Achse bei 4, berührt die x-Achse 
+bei x = 2 und hat im Punkt (1|2,25) die Steigung -3. 
+Wie lautet seine Funktionsgleichung?
+
+<img src="Aufgabe104.jpg" >
+
+Allgemeine Form einer ganzrationalen Funktion 4. Grades: 
+
+f<sub>(x)</sub> = ax<sup>4</sup> + bx<sup>3</sup> + cx<sup>2</sup> + dx + e 
+
+f’<sub>(x)</sub> = 4ax<sup>3</sup> + 3bx<sup>2</sup> + 2cx + d 
+
+f’’<sub>(x)</sub> = 12ax<sup>2</sup> + 6bx + 2c  
+
+5 Bedingungen:
+
+1. Schneidet die y-Achse bei 4 bedeutet:
+
+f<sub>(0)</sub> = 4 --> 
+
+a * 0<sup>4</sup> + b * 0<sup>3</sup> + c * 0<sup>2</sup> + d * 0 + e = 4 --> 
+
+e = 4 
+
+2. Berührt die x-Achse bei x = 2 bedeutet zum einen: 
+(e = 4 eingesetzt) 
+
+f<sub>(2)</sub> = 0 --> 
+
+a * 2<sup>4</sup> + b * 2<sup>3</sup> + c * 2<sup>2</sup> + d * 2 + 4 = 0 -->  
+
+16a + 8b + 4c + 2d + 4 = 0         I 
+
+3. Berührt die x-Achse bei x = 2 bedeutet zum anderen: 
+
+f’<sub>(2)</sub> = 0 --> 
+
+4a * 2<sup>3</sup> + 3b * 2<sup>2</sup> + 2c * 2 + d = 0 --> 
+
+32a + 12b + 4c + d = 0            II 
+
+4. Hat im Punkt (1|2,25) die Steigung -3 bedeutet zum einen: 
+(e = 4 eingesetzt) 
+
+f<sub>(1)</sub> = 2,25 --> 
+
+a * 1<sup>4</sup> + b * 1<sup>3</sup> + c * 1<sup>2</sup> + d * 1 + 4 = 2,25 -->  
+
+a + b + c + d + 4 = 2,25       III 
+
+5. Hat im Punkt (1|2,25) die Steigung -3 bedeutet zum anderen: 
+
+f’<sub>(1)</sub> = -3 --> 
+
+4a * 1<sup>3</sup> + 3b * 1<sup>2</sup> + 2c * 1 + d = -3 --> 
+
+4a + 3b + 2c + d = -3      IV 
+
+I + II * (-2) 
+
+ 16a +  8b + 4c + 2d + 4 = 0 
+-64a - 24b - 8c - 2d     = 0 
+-----------------------------
+-48a - 16b - 4c      + 4 = 0 |-4 
+ 
+         -48a - 16b - 4c = -4        V 
+ 
+I + IV * (-2) 
+ 
+16a + 8b + 4c + 2d + 4 = 0 
+-8a - 6b - 4c - 2d     = 6 
+---------------------------
+ 8a + 2b           + 4 = 6 |-4 
+ 
+               8a + 2b = 2      VI 
+ 
+III * (-1) * IV 
+
+-a -  b -  c - d - 4 = -2,25 
+4a + 3b + 2c + d     = -3 
+-----------------------------
+3a + 2b +  c     - 4 = -5,25 |+4 
+ 
+         3a + 2b + c = -1,25      VII 
+ 
+VII * 4 + V 
+ 
+ 12a +  8b + 4c = -5 
+-48a - 16b - 4c = -4 
+---------------------
+-36a -  8b      = -9         VIII 
+ 
+VI * 4 + VIII 
+ 
+ 32a + 8b =  8 
+-36a - 8b = -9 
+---------------
+ -4a      = -1 |:(-4) 
+ 
+        a = 1/4 = 0,25   
+ 
+a = 0,25 in VI eingesetzt: 
+ 
+8 * 0,25 + 2b = 2 
+ 
+       2 + 2b = 2 |-2 
+ 
+           2b = 0 |:2 
+ 
+            b = 0 
+ 
+a = 0,25 und b = 0 in VII eingesetzt: 
+ 
+3 * 0,25 + 2 * 0 + c = -1,25 
+ 
+            0,75 + c = -1,25 |-0,75 
+ 
+                   c = -2 
+ 
+a = 0,25 und b = 0 und c = -2 in IV eingesetzt: 
+ 
+               4a + 3b + 2c + d = -3 
+ 
+4 * 0,25 + 3 * 0 + 2 * (-2) + d = -3 
+ 
+                      1 - 4 + d = -3 
+ 
+                         -3 + d = -3 | +3 
+ 
+                              d = 0 
+ 
+Gesuchte Funktionsgleichung: 
+ 
+<span style="color:red">f<sub>(x)</sub> = 0,25x<sup>4</sup> - 2x<sup>2</sup> + 4</span>
+
+</b></p></pre></body></html>
