@@ -1,0 +1,232 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steckbriefaufgaben</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 116
+
+Der Graph einer ganzrationalen Funktion 5. Grades 
+geht durch den Punkt (0|1), berührt die x-Achse 
+bei -5 und wechselt bei x = 1, -2 und -3 das 
+Vorzeichen. Wie lautet seine Funktionsgleichung?
+
+<img src="Aufgabe116.jpg" >
+
+Allgemeine Form einer ganzrationalen Funktion 5. Grades: 
+
+f<sub>(x)</sub> = ax<sup>5</sup> + bx<sup>4</sup> + cx<sup>3</sup> + dx<sup>2</sup> + ex + f 
+
+f’<sub>(x)</sub> = 5ax<sup>4</sup> + 4bx<sup>3</sup> + 3cx<sup>2</sup> + 2dx + e
+
+f’’<sub>(x)</sub> = 20ax<sup>3</sup> + 12bx<sup>2</sup> + 6cx + 2d
+
+6 Bedingungen : 
+
+1. Geht durch (0|1) bedeutet: 
+
+f<sub>(0)</sub> = 1 --> 
+
+a * 0<sup>5</sup> + b * 0<sup>4</sup> + c * 0<sup>3</sup> + d * 0<sup>2</sup> + e * 0 + f = 1 -->  
+
+f = 1 
+
+2. Berührt die x-Achse bei -5 bedeutet zum einen: 
+(f = 1 eingesetzt) 
+
+f<sub>(-5)</sub> = 0 -->  
+
+a * (-5)<sup>5</sup> + b * (-5)<sup>4</sup> + c * (-5)<sup>3</sup> + d * (-5)<sup>2</sup> + e * (-5) + 1 = 0 -->  
+
+-3125a + 625b - 125c + 25d - 5e + 1 = 0        I
+
+3. Berührt die x-Achse bei - 5 bedeutet zum anderen: 
+ 
+f’<sub>(-5)</sub> = 0 --> 
+
+5a * (-5)<sup>4</sup> + 4b * (-5)<sup>3</sup> + 3c * (-5)<sup>2</sup> + 2d * (-5) + e = 0  --> 
+
+3125a - 500b + 75c - 10d + e = 0             II 
+
+4. Wechselt bei 1 das Vorzeichen bedeutet: 
+(f = 1 eingesetzt) 
+
+f<sub>(1)</sub> = 0 --> 
+
+a * 1<sup>5</sup> + b * 1<sup>4</sup> + c * 1<sup>3</sup> + d * 1<sup>2</sup> + e * 1 + 1 = 0 -->  
+
+a + b + c + d + e + 1 = 0                III 
+
+5. Wechselt bei -2 das Vorzeichen bedeutet: 
+(f = 1 eingesetzt) 
+
+f<sub>(-2)</sub> = 0 -->  
+
+a * (-2)<sup>5</sup> + b * (-2)<sup>4</sup> + c * (-2)<sup>3</sup> + d * (-2)<sup>2</sup> + e * (-2) + 1 = 0 -->  
+
+-32a + 16b - 8c + 4d - 2e + 1 = 0                IV 
+ 
+6. Wechselt bei -3 das Vorzeichen bedeutet: 
+(f = 1 eingesetzt) 
+ 
+f<sub>(-3)</sub> = 0 -->  
+ 
+a * (-3)<sup>5</sup> + b * (-3)<sup>4</sup> + c * (-3)<sup>3</sup> + d * (-3)<sup>2</sup> + e * (-3) + 1 = 0 -->  
+
+ - 243a + 81b - 27c + 9d - 3e + 1 = 0                V 
+ 
+II + III * (-1)   
+ 
+3125a - 500b + 75c - 10d + e     = 0 
+   -a -    b -   c -   d - e - 1 = 0  
+-------------------------------------               
+3124a - 501b + 74c - 11d     - 1 = 0| +1 
+ 
+        3124a - 501b + 74c - 11d = 1                   VI 
+ 
+III * 2 + IV 
+ 
+  2a +  2b + 2c + 2d + 2e + 2 = 0 
+-32a + 16b - 8c + 4d - 2e + 1 = 0 
+----------------------------------
+-30a + 18b - 6c + 6d      + 3 = 0 |-3 
+ 
+         -30a + 18b - 6c + 6d = -3                   VII 
+ 
+III * 3 + V 
+ 
+   3a +  3b +  3c + 3d + 3e + 3 = 0 
+-243a + 81b - 27c + 9d - 3e + 1 = 0 
+------------------------------------
+-240a + 84b - 24c + 12d     + 4 = 0 |-4 
+ 
+        -240a + 84b - 24c + 12d = -4                   VIII 
+ 
+III * 5 + I 
+ 
+    5a +   5b +   5c +  5d + 5e + 5 = 0 
+-3125a + 625b - 125c + 25d - 5e + 1 = 0 
+----------------------------------------
+-3120a + 630b - 120c + 30d      + 6 = 0 |-6 
+ 
+         -3120a + 630b - 120c + 30d = -6              IX 
+ 
+ 
+VII * (-2) + VIII 
+ 
+  60a - 36b + 12c - 12d =  6 
+-240a + 84b - 24c + 12d = -4 
+-----------------------------
+-180a + 48b - 12c       = 2              X 
+
+VI * 6 + VII * 11 
+ 
+18744a - 3006b + 444c - 66d = 6 
+ -330a +  198b -  66c + 66d = -33  
+----------------------------------
+18414a - 2808b + 378c       = -27           XI 
+ 
+VII * (-5) + IX 
+ 
+  150a -  90b  + 30c - 30d = 15 
+-3120a + 630b - 120c + 30d = -6 
+--------------------------------
+-2970a + 540b - 90c        =  9             XII 
+ 
+X * 31,5 + XI 
+
+-5670a + 1512b - 378c =  63 
+18414a - 2808b + 378c = -27 
+----------------------------
+12744a - 1296b        = 36                 XIII  
+ 
+X * (-7,5) + XII 
+ 
+ 1350a - 360b + 90c = -15 
+-2970a + 540b - 90c = 9 
+---------------------------
+-1620a + 180b       = -6                   XIV 
+ 
+XIII * 180 + XIV * 1296 
+ 
+ 2293920a - 233280b =  6480 
+-2099520a + 233280b = -7776 
+----------------------------
+            194400a = -1296 |:194400 
+ 
+                           1296          1 
+                  a = - ---------- = - ----- 
+                          194400        150  
+ 
+a = -1/150 in XIII eingesetzt: 
+ 
+12744 *- 1/150 - 1296b = 36 |*150 
+ 
+       12744 - 194400b = 5400 |+ 12744 
+ 
+              -194400b = 18144 |:(-194400)
+ 
+                             18144          7 
+                     b = - ---------- = - ----      
+                             194400        75   
+ 
+a = -1/150 und b = -7/75 in X eingesetzt: 
+ 
+-180 * (- 1/150) + 48 * (-7/75) - 12c = 2 |*150 
+ 
+                    180 - 672 - 1800c = 300 
+ 
+                         -492 - 1800c = 300 | +492 
+ 
+                               -1800c = 792  |:-1800 
+ 
+                                            792        11 
+                                    c = - ------- = - ---- 
+                                           1800        25   
+ 
+a = -1/150 und b = -7/75 und c = -11/25 in VII eingesetzt: 
+
+-30 * (- 1/150) + 18 * (-7/75) - 6 * (-11/25) + 6d = -3 |*150 
+ 
+                             30 - 252 + 396 + 900d = -450 
+ 
+                                        174 + 900d = -450 |-174 
+ 
+                                              900d = -624 |:900 
+ 
+                                                         624        52 
+                                                  d = - ------ = - ---- 
+                                                         900        75 
+ 
+   
+a = -1/150 und b = -7/75 und c = -11/25 und d = -52/75 
+in III eingesetzt: 
+
+ -1/150 - 7/75 - 11/25 - 52/75 + e + 1 = 0 |*150 
+ 
+        1 - 14 - 66 - 104 + 150e + 150 = 0 
+ 
+                            -35 * 150e = 0 |+35 
+ 
+                                  150e = 35 |:150 
+ 
+                                          35      7 
+                                     e = ----- = ---- 
+                                          150     30 
+ 
+Gesuchte Funktionsgleichung: 
+ 
+<span style="color:red">f<sub>(x)</sub> = -(1/150)x<sup>5</sup> - (7/75)x<sup>4</sup> - (11/25)x<sup>3</sup> -(52/75)x<sup>2</sup> + (7/30)x + 1</span>
+
+</b></p></pre></body></html>

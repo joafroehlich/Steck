@@ -1,0 +1,154 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steckbriefaufgaben</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 141
+
+Das Wachstum einer Pflanze soll durch eine ganzrationale 
+Funktion 3. Grades modelliert werden. 
+Folgende Messwerte liegen vor: 
+
+Monate          0      1       5 
+Höhe in cm     20     40     120  
+
+Nach 5 Monaten hat sie ihre maximale Höhe erreicht. 
+Zu welchem Zeitpunkt ist der Höhenzuwachs am größten? 
+
+<img src="Aufgabe141.jpg" >
+
+Allgemeine Form einer ganzrationalen Funktion 3. Grades: 
+
+f<sub>(x)</sub> = ax<sup>3</sup> + bx<sup>2</sup> + cx + d 
+
+f’<sub>(x)</sub> = 3ax<sup>2</sup> + 2bx + c 
+
+f’’<sub>(x)</sub> = 6ax + 2b  
+
+4 Bedingungen: 
+
+1. Nach 0 Monaten 20 cm hoch bedeutet: 
+
+f<sub>(0)</sub> = 20 --> 
+
+a * 0<sup>3</sup> + b * 0<sup>2</sup> + c * 0 + d = 20 --> 
+
+d = 20 
+
+2. Nach 1 Monaten 40 cm hoch bedeutet: 
+(d = 20 eingesetzt) 
+
+f<sub>(1)</sub> = 40 --> 
+
+a * 1<sup>3</sup> + b * 1<sup>2</sup> + c * 1 + 20 = 40 --> 
+
+a + b + c + 20 = 40 | -20 
+
+a + b + c = 20      I 
+
+3. Nach 5 Monaten 120 cm hoch bedeutet: 
+(d = 20 eingesetzt) 
+
+f<sub>(5)</sub> = 120 --> 
+
+a * 5<sup>3</sup> + b * 5<sup>3</sup> + c * 5 + 20 = 120 -->  
+
+125a + 25b + 5c + 20 = 120 |-20 
+
+125a + 25b + 5c = 100      II 
+
+4. Nach 5 Monaten hat sie ihre maximale Höhe 
+erreicht bedeutet: 
+
+f’<sub>(5)</sub> = 0 --> 
+
+3a * 5<sup>2</sup> + 2b * 5 + c = 0 -->
+
+75a + 10b + c = 0      III
+
+I * (-1) + III 
+
+ -a -   b - c = -20 
+75a + 10b + c =   0 
+--------------------
+74a + 9b      = -20         IV 
+ 
+I * (-5) + II 
+ 
+ -5a -  5b - 5c = -100 
+125a + 25b + 5c =  100 
+-----------------------
+120a + 20b      = 0            V 
+ 
+IV * (-20) + V * 9 
+
+-1480a - 180b = 400 
+ 1080a + 180b = 0 
+-------------------
+ -400a        = 400 |:(-400) 
+ 
+            a = -1 
+ 
+a = -1 in IV eingesetzt: 
+ 
+74 * (-1) + 9b = -20 
+ 
+      -74 + 9b = -20  +74 
+ 
+            9b = 54 | :9 
+ 
+             b = 6     
+ 
+a = - 1 und b= 6 in I eingesetzt: 
+
+ -1 + 6 + c = 20 
+ 
+      5 + c = 20 |-5 
+ 
+          c = 15 
+ 
+Gesuchte Funktion: 
+ 
+f<sub>(x)</sub> = -x<sup>3</sup> + 6x<sup>2</sup> + 15x + 20 
+ 
+Der größte Höhenzuwachs findet im Wendepunkt 
+der Funktion statt: 
+ 
+f’’<sub>(x)</sub> = 0 --> 
+
+-6x + 12 = 0 |-12 
+ 
+     -6x = -12 |:(-6) 
+ 
+       x = 2     
+ 
+<span style="color:red">Nach 2 Monaten ist der Höhenzuwachs am größten.</span> 
+
+Monate        0      1      2      3       4       5 
+Höhe in cm   20     40     66     93     112     120 
+ 
+Höhenzuwachs bis zum:
+
+1.Monat    20 cm 
+ 
+2. Monat   26 cm 
+ 
+3. Monat   27 cm 
+ 
+4. Monat   19 cm 
+ 
+5. Monat     8 cm     
+
+</b></p></pre></body></html>

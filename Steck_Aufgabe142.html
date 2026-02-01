@@ -1,0 +1,166 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steckbriefaufgaben</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 142
+
+Ein Chemiker hat ein Mittel entwickelt und will dessen 
+Wirkung mit einer ganzrationalen Funktion 3. Grades 
+beschreiben. Dazu hat er die Reaktionsstärke R auf das 
+Mittel in Abhängigkeit von der Dosis in kg gemessen. 
+(R = 0 bedeutet keine Reaktion, je größer R, desto 
+größer die Reaktion).  
+
+Dosis in kg            0     1        2     4               
+Reaktionsstärke R      0     1,25     4     8  
+
+Welche Dosis ist erforderlich, wenn R = 6,25 auftreten soll?
+
+<img src="Aufgabe142.jpg" >
+
+Allgemeine Form einer ganzrationalen Funktion 3. Grades: 
+
+f<sub>(x)</sub> = ax<sup>3</sup> + bx<sup>2</sup> + cx + d 
+
+f’<sub>(x)</sub> = 3ax<sup>2</sup> + 2bx + c 
+
+f’’<sub>(x)</sub> = 6ax + 2b  
+
+4 Bedingungen: 
+
+1. Dosis 0 kg und R = 0 bedeutet: 
+
+f<sub>(0)</sub> = 0 --> 
+
+a * 0<sup>3</sup> + b * 0<sup>2</sup> + c * 0 + d = 0 --> 
+
+d = 0 
+
+2. Dosis 1 kg und R = 1,25 bedeutet: 
+(d = 0 eingesetzt) 
+
+f<sub>(1)</sub> = 1,25 --> 
+
+a * 1<sup>3</sup> + b * 1<sup>2</sup> + c * 1 = 1,25 --> 
+
+a + b + c = 1,25       I 
+
+3. Dosis 2 kg und R = 4 bedeutet: 
+(d = 0 eingesetzt) 
+
+f<sub>(2)</sub> = 4 --> 
+
+a * 2<sup>3</sup> + b * 2<sup>2</sup> + c * 2 = 4 --> 
+
+8a + 4b + 2c = 4      II 
+
+4. Dosis 4 kg und R = 8 bedeutet: 
+(d = 0 eingesetzt) 
+
+f<sub>(2)</sub> = 8 --> 
+
+a * 4<sup>3</sup> + b * 4<sup>2</sup> + c * 4 = 8 -->  
+
+64a + 16b + 4c = 8      III 
+
+I * (-2) + II 
+
+-2a - 2b - 2c = -2,5 
+ 8a + 4b + 2c =  4
+---------------------
+ 6a + 2b      = 1,5       IV 
+
+I * (-4) + II 
+
+ -4a -  4b - 4c = -5 
+ 64a + 16b + 4c =  8 
+---------------------
+ 60a + 12b      = 3            V 
+ 
+IV * (-6) + V 
+
+-36a - 12b = -9 
+ 60a + 12b =  3 
+----------------
+ 24a       = -6 |:24 
+ 
+         a = -0,25 
+ 
+a = -0,25 in IV eingesetzt: 
+ 
+6 * (-0,25) + 2b = 1,5 
+ 
+       -1,5 + 2b = 1,5 |+1,5 
+ 
+              2b = 3 |:2 
+ 
+               b = 1,5     
+ 
+a = -0,25 und b= 1,5 in I eingesetzt: 
+
+ -0,25 + 1,5 + c = 1,25 
+ 
+        1,25 + c = 1,25 |-1,25 
+ 
+               c = 0 
+ 
+Gesuchte Funktion: 
+ 
+f<sub>(x)</sub> = -0,25x<sup>3</sup> + 1,5x<sup>2</sup>  
+ 
+R = 6,25 --> 
+ 
+6,25 = 0,25x<sup>3</sup> + 1,5x<sup>2</sup> |-6,25 
+ 
+0,25x<sup>3</sup> + 1,5x<sup>2</sup> - 6,25 = 0 
+ 
+Mögliche Lösungen dieser Gleichung sind die 
+Faktoren von 6,25: 
+ 
+6,25 = 5 * 1,25 = 5 * 5 * 0,25 = 5 * 5 * 5 * 0,05 = 5 * 5 * 5 * 5 * 0,01 
+ 
+Hornerschema an der Stelle x = 5: 
+ 
+ 
+         -0,25     1,5     0       -6,25 
+ 
+x = 5             -1,25    1,25     6,25    
+ 
+         -0,25     0,25    1,25     0 
+ 
+Lösung der quadratischen Gleichung: 
+
+ -0,25x<sup>2</sup> + 0,25x + 1,25 = 0 |*(-4) 
+ 
+             x<sup>2</sup> - x - 5 = 0 
+ 
+p, q - Formel: 
+ 
+p = -1, q = -5 
+ 
+<img src="Aufgabe142a.jpg" >
+ 
+x<sup>1,2</sup> = 0,5 ± &#8730;5,25  
+                                                    
+x<sup>1,2</sup> = 0,5 ± 2,3 
+ 
+x<sup>1</sup> = 0,5 + 2,3 = 2,8 
+ 
+x<sup>2</sup> = 0,5 - 2,3 = -1,8   keine Lösung, negative Dosis 
+ 
+<span style="color:red">Die Reaktionsstärke 6,25 tritt bei der Dosis 2,8 oder 5 auf.</span> 
+ 
+</b></p></pre></body></html>

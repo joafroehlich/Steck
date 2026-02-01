@@ -1,0 +1,154 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steckbriefaufgaben</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 138
+
+Ein Hersteller berechnet seine Gesamtkosten mit 
+einer ganzrationalen Funktion 3. Grades. Dabei 
+setzt er 720 € Fixkosten an, rechnet mit 
+durchschnittlichen variablen Kosten von 50 € bei 
+einer produzierten Menge von 100 ME, mit Grenzkosten 
+von 48,03 € bei 1 ME und mit gesamten Durchschnitts-
+kosten von 70 € bei 20 ME. 
+Bei welcher ME liegt sein  Betriebsminimum? 
+
+<img src="Aufgabe138.jpg" >
+
+Allgemeine Form einer ganzrationalen Kostenfunktion 3. Grades: 
+
+K<sub>(x)</sub> = ax<sup>3</sup> + bx<sup>2</sup> + cx + d 
+
+K’<sub>(x)</sub> = 3ax<sup>2</sup> + 2bx + c 
+
+K’’<sub>(x)</sub> = 6ax + 2b  
+
+K<sub>v(x)</sub> = ax<sup>3</sup> + bx<sup>2</sup> + cx
+
+4 Bedingungen: 
+ 
+1. Dabei setzt er 720 € Fixkosten an bedeutet: 
+ 
+K<sub>(0)</sub> = 720 --> 
+
+a * 0<sup>3</sup> + b * 0<sup>2</sup> + c * 0 + d = 720 --> 
+
+d = 720 
+ 
+2. Rechnet mit durchschnittlichen variablen Kosten 
+von 50 € bei einer produzierten Menge von 100 ME bedeutet:  
+ 
+K<sub>v(x)</sub> = a * x<sup>3</sup> + b * x<sup>2</sup> + c * x 
+ 
+          K<sub>v(x)</sub>        
+k<sub>v(x)</sub> = -------- = a * x<sup>2</sup> + b * x + c 
+            x  
+ 
+k<sub>v(100)</sub> = 50 --> 
+
+a * 100<sup>2</sup> + b * 100 + c = 50 --> 
+ 
+10000a + 100b + c = 50         I 
+ 
+3. Mit Grenzkosten von 48,03 € bei 1 ME bedeutet:  
+ 
+K’<sub>(1)</sub> = 48,03 --> 
+
+3a * 1<sup>2</sup> + 2b * 1 + c = 48,03 -->  
+ 
+3a + 2b + c = 48,03        II 
+ 
+4. Mit gesamten Durchschnittskosten von 70 € 
+bei 20 ME bedeutet: 
+ 
+                 a * 20<sup>3</sup> + b * 20<sup>2</sup> + c * 20 + 720   
+k<sub>(20)</sub> = 70 --> ----------------------------------- = 70 -->  
+                                20 
+ 
+a * 20<sup>2</sup> + b * 20 + c + 36 = 70 |-36  
+ 
+400a + 20b + c = 34        III 
+ 
+I + III * (-1) 
+ 
+10000a + 100b + c =  50 
+ -400a -  20b - c = -34 
+------------------------
+ 9600a +  80b     = 16        IV 
+ 
+II * (-1) + III 
+ 
+ -3a -  2b - c = -48,03 
+400a + 20b + c =  34 
+-----------------------
+397a + 18b     = -14,03              V 
+ 
+IV * 18 + V * (-80) 
+ 
+172800a + 1440b =  288 
+-31760a - 1440b = 1122,4 
+-------------------------
+141040a         = 1410,4  |:141040 
+ 
+              a = 0,01   
+ 
+a = 0,01 in IV eingesetzt: 
+ 
+9600 * 0,01 + 80b = 16 
+ 
+         96 + 80b = 16 |-96 
+ 
+              80b = -80 |:80 
+ 
+                b = -1 
+ 
+a = 0,01 und b = -1 in III eingesetzt: 
+ 
+400 * 0,01 + 20 * (-1) + c = 34 
+ 
+                4 - 20 + c = 34 
+ 
+                   -16 + c = 34 |+16 
+ 
+                         c = 50 
+ 
+Gesuchte Kostenfunktion: 
+ 
+K<sub>(x)</sub> = 0,01x<sup>3</sup> - x<sup>2</sup> + 50x + 720 
+ 
+Für das Betiebsminimum gilt: 
+
+k<sub>v</sub>’<sub>(x)</sub> = 0 
+
+          K<sub>v(x)</sub>       0,01x<sup>3</sup> - x<sup>2</sup> + 50x 
+k<sub>v(x)</sub> = --------- = ---------------------- = 0,01x<sup>2</sup> - x + 50 
+            x                 x 
+    
+k<sub>v</sub>’<sub>(x)</sub> = 0,02x - 1 = 0 |+1 
+ 
+             0,02x = 1 |:0,02 
+ 
+                 x = 50 ME 
+ 
+kv’’<sub>(50)</sub> = 0,02 > 0 --> Minimum 
+ 
+K<sub>(50)</sub> = 0,01 * 50<sup>3</sup> - 50<sup>2</sup> + 50 * 50 + 720 
+ 
+      = 1250 - 2500 + 2500 + 720 = 1970 GE 
+ 
+<span style="color:red">Das Betriebsminimum liegt bei (50|1970)</span>
+
+</b></p></pre></body></html>

@@ -1,0 +1,147 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steckbriefaufgaben</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 129
+
+Die Veränderung der Oberflächentemperatur eines Teiches 
+während eines Tages kann nach langjähriger Beobachtung 
+durch eine ganzrationale Funktion 3. Grades beschrieben 
+werden. Messungen ergaben: Um 0.00 Uhr waren es 19°, 
+um 6.00 war sie am niedrigsten mit 17,8° und um 17.00 
+war sie am höchsten. 
+Zu welchem Zeitpunkt ist sie am stärksten gestiegen?
+
+<img src="Aufgabe129.jpg" >
+
+Allgemeine Form einer ganzrationalen Funktion 3. Grades:
+
+f<sub>(x)</sub> = ax<sup>3</sup> + bx<sup>2</sup> + cx + d 
+
+f’<sub>(x)</sub> = 3ax<sup>2</sup> + 2bx + c
+
+f’’<sub>(x)</sub> = 6ax + 2b  
+
+4 Bedingungen: 
+
+1. Um 0.00 Uhr waren es 19° bedeutet: 
+
+f<sub>(0)</sub> = 19 --> 
+
+a * 0<sup>3</sup> + b * 0<sup>2</sup> + c * 0 + d  = 19 --> 
+
+d = 19 
+
+2. Um 6.00 Uhr war sie am niedrigsten mit 17,8° 
+bedeutet zum einen:  (d = 19 eingesetzt) 
+ 
+f<sub>(6)</sub> = 17,8 --> 
+
+a * 6<sup>3</sup> + b * 6<sup>2</sup> + c * 6 + 19 = 17,8 -->  
+ 
+216a + 36b + 6c + 19 = 17,8 |-19 
+ 
+216a + 36b + 6c = -1,2         I 
+ 
+3. Um 6.00 Uhr war sie am niedrigsten mit 17,8° 
+bedeutet zum anderen:  
+ 
+f’<sub>(6)</sub> = 0 --> 
+
+3a * 6<sup>2</sup> + 2b * 6 + c = 0 --> 
+
+108a + 12b + c = 0      II 
+ 
+4. Um 17.00 Uhr war sie am höchsten:  
+ 
+f’<sub>(17)</sub> = 0 --> 
+
+3a * 17<sup>2</sup> + 2b * 17 + c = 0 --> 
+
+867a + 34b + c = 0       III 
+  
+II * (-1) + III 
+
+-108a - 12b - c = 0 
+ 867a + 34b + c = 0 
+--------------------
+ 759a + 22b     = 0           IV 
+ 
+I + II * (-6) 
+  
+ 216a + 36b + 6c = -1,2 
+-648a - 72b - 6c =  0 
+------------------------
+-432a - 36b      = -1,2      V 
+ 
+IV * 36 + V * 22 
+ 
+27324a + 792b =  0 
+-9504a - 792b = -26,4 
+----------------------
+17820a        = -26,4 |:17820 
+ 
+            a = -0,00148 
+ 
+a = -0,00148 in IV eingesetzt: 
+ 
+759 * (-0,00148) + 22b = 0 
+ 
+          -1,123 + 22b = 0 |+1,123 
+ 
+                   22b = 1,123 |:22 
+ 
+                     b = 0,051 
+ 
+a = -0,00148 und b = 0,051 in I eingesetzt: 
+
+216a + 36b + 6c = -1,2 
+ 
+216 * (-0,00148) + 36 * 0,051 + 6c = -1,2 
+ 
+                -0,32 + 1,836 + 6c = -1,2 
+ 
+                        1,516 + 6c = -1,2 |-1,516 
+ 
+                                6c = -2,716 |:6 
+ 
+                                 c = -0,453 
+ 
+f<sub>(x)</sub> = -0,00148x<sup>3</sup> + 0,051x<sup>2</sup> - 0,453x + 19 
+ 
+Will man wissen, wann der stärkste Temperaturanstieg ist, 
+braucht man die Tangenstensteigung f’(x) und zwar 
+deren Maximum. 
+ 
+f’<sub>(x)</sub> = -0,00444x<sup>3</sup> + 0,102x - 0,453 
+ 
+Zur Bestimmung des Extremwertes die erste Ableitung 
+von f’<sub>(x)</sub> (= zweite Ableitung der Ursprungsfunktion) 
+gleich Null setzen --> 
+Der Extremwert dieser ersten Ableitung = Wendepunkt der 
+Ursprungsfunktion. 
+ 
+f’’<sub>(x)</sub> = -0,00888x + 0,102 |-0,0102 
+ 
+0,00888x = - 0,102 |:-0,00888 
+ 
+x = 11,5 h --> <span style="color:red">11.30 Uhr</span> 
+ 
+f’’’<sub>(x)</sub> = -0,00888 ist negativ --> 
+
+ein Maximum liegt vor.
+
+</b></p></pre></body></html>

@@ -1,0 +1,108 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steckbriefaufgaben</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 128
+
+Eine Hauseinfahrt hat zur Straße hin einen Höhenunterschied 
+von 1 m. Sie soll mithilfe einer ganzrationalen Funktion so 
+gestaltet werden, dass sie waagerecht 5 m von der Straße 
+entfernt beginnt und waagerecht in die Straße einmündet. 
+1 m von der Straße entfernt liegt auf Hausebene ein 70 cm 
+hoher Felsbrocken. 
+In welchem Abstamd überstreicht ihn die geplante Einfahrt? 
+
+<img src="Aufgabe128.jpg" >
+
+Die gesuchte ganzrationale Funktion muss mindestens 
+3. Grades sein, da sich das Krümmungsverhalten vom 
+Haus aus von einer Links- zu einer Rechtskrümmung 
+(Wendepunkt) verändern muss. 
+
+f<sub>(x)</sub> = ax<sup>3</sup> + bx<sup>2</sup> + cx + d 
+
+f’<sub>(x)</sub> = 3ax<sup>2</sup> + 2bx + c
+
+4 Bedingungen: 
+
+1. Geht durch den Punkt (0|0) bedeutet: 
+
+f<sub>(0)</sub> = 0 --> 
+
+a * 0<sup>3</sup> + b * 0<sup>2</sup> + c * 0 + d = 0 --> 
+
+d = 0 
+
+2. Waagerecht beginnen bedeutet: 
+
+f’<sub>(0)</sub> = 0 --> 
+
+3a * 0<sup>2</sup> + 2b * 0 + c = 0 --> 
+
+c = 0 
+
+3. Geht durch den Punkt (5|1) bedeutet: 
+(c = 0 und d = 0 eingesetzt) 
+
+f<sub>(5)</sub> = 1 --> 
+
+a * 5<sup>3</sup> + b * 5<sup>2</sup> = 1 --> 
+
+125a + 25b = 1       I
+        
+4. Waagerecht einmünden bedeutet: 
+(c = 0 eingesetzt) 
+
+f’<sub>(5)</sub> = 0 --> 
+
+3a * 5<sup>2</sup> + 2b * 5 = 0 --> 
+
+75a + 10b = 0         II 
+
+II * (-2,5) + I 
+
+-187,5a - 25b = 0 
+ 125a   + 25b = 1 
+------------------
+-62,5a        = 1 |:(-62,5) 
+ 
+                    10         2     
+            a = - ------ = - ----- 
+                    625       125       
+ 
+a = -2/125 in I eingesetzt: 
+ 
+125 * (- 2/125) + 25b = 1 
+ 
+             -2 + 25b = 1 |+2 
+ 
+                  25b = 3 |:25 
+ 
+                    b = 3/25 
+ 
+f<sub>(x)</sub> = -(2/125)x<sup>3</sup> + (3/25)x<sup>2</sup> 
+  
+Abstand Einfahrt - Felsbrocken: 
+ 
+f<sub>(4)</sub> = -(2/125) * 4<sup>3</sup> + (3/25) * 4<sup>2</sup> 
+ 
+f<sub>(4)</sub> = -1,024 + 1,96 
+ 
+f<sub>(4)</sub> = 0,896 m = 89,6 cm 
+ 
+<span style="color:red">Abstand</span>: 89,6 cm - 70 cm <span style="color:red">= 19,6 cm</span>
+
+</b></p></pre></body></html>

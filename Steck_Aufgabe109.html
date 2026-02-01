@@ -1,0 +1,178 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steckbriefaufgaben</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 109
+
+Der Graph einer ganzrationalen Funktion 6. Grades 
+geht durch die Punkte (-1|4) und (2|49), hat in 
+(0|1) einen Wendepunkt mit waagerechter Tangente 
+und in (1|0) einen Tiefpunkt. 
+Wie lautet seine Funktionsgleichung?
+
+<img src="Aufgabe109.jpg" >
+
+Allgemeine Form einer ganzrationalen Funktion 6. Grades: 
+
+f<sub>(x)</sub> = ax<sup>6</sup> + bx<sup>5</sup> + cx<sup>4</sup> + dx<sup>3</sup> + ex<sup>2</sup> + fx + g 
+
+f’<sub>(x)</sub> = 6ax<sup>5</sup> + 5bx<sup>4</sup> + 4cx<sup>3</sup> + 3dx<sup>2</sup> + 2ex + f 
+
+f’’<sub>(x)</sub> = 30ax<sup>4</sup> + 20bx<sup>3</sup> + 12cx<sup>2</sup> + 6dx + 2e
+
+7 Bedingungen : 
+
+1. Hat in (0|1) einen Wendepunkt mit waagerechter Tangente
+(Sattelpunkt) bedeutet erstens: 
+
+f<sub>(x)</sub> = 1 --> 
+
+a * 0<sup>6</sup> + b * 0<sup>5</sup> + c * 0<sup>4</sup> + d * 0<sup>3</sup> + e * 0<sup>2</sup> + f * 0 + g = 1  --> 
+
+g = 1  
+
+2. Hat in (0|1) einen Wendepunkt mit waagerechter Tangente 
+(Sattelpunkt) bedeutet zweitens: 
+
+f’<sub>(0)</sub> = 0 --> 
+
+6a * 0<sup>5</sup> + 5b * 0<sup>4</sup> + 4c * 0<sup>3</sup> + 3d * 0<sup>2</sup> + 2e  * 0 + f = 0 --> 
+
+f = 0 
+
+3. Hat in (0|1) einen Wendepunkt mit waagerechter Tangente 
+(Sattelpunkt) bedeutet drittens: 
+
+f’’<sub>(0)</sub> = 0 --> 
+
+30a * 0<sup>4</sup> + 20b * 0<sup>3</sup> + 12c * 0<sup>2</sup> + 6d  * 0 + 2e = 0 --> 
+
+2e = 0 |:2 -->
+
+e = 0 
+
+4. Geht durch den Punkt (-1|4) bedeutet: 
+(e = 0 und f = 0 und g = 1 eingesetzt) 
+
+f<sub>(-1)</sub> = 4 --> 
+
+a * (-1)<sup>6</sup> + b * (-1)<sup>5</sup> + c * (-1)<sup>4</sup> + d * (-1)<sup>3</sup> + 1 = 4 --> 
+
+a - b + c - d + 1 = 4 |-1 
+
+a - b + c - d = 3                 I 
+
+5. Geht durch den Punkt (2|49) bedeutet: 
+(e = 0 und f = 0 und g = 1 eingesetzt) 
+ 
+f<sub>(2)</sub> = 49 --> 
+
+a * 2<sup>6</sup> + b * 2<sup>5</sup> + c * 2<sup>4</sup> + d * 2<sup>3</sup> + 1 = 49 --> 
+ 
+64a + 32b + 16c + 8d + 1 = 49 |-1 
+ 
+    64a + 32b + 16c + 8d = 48          II   
+ 
+6. Hat in (1|0) einen Tiefpunkt bedeutet zum einen: 
+(e = 0 und f = 0 und g = 1 eingesetzt) 
+
+f<sub>(1)</sub> = 0 --> 
+
+a * 1<sup>6</sup> + b * 1<sup>5</sup> + c * 1<sup>4</sup> + d * 1<sup>3</sup> + 1 = 0 --> 
+ 
+a + b + c + d + 1 = 0 |-1 
+ 
+a + b + c + d = - 1          III                  
+ 
+7. Hat in (1|0) einen Tiefpunkt bedeutet zum anderen: 
+(e = 0 und f = 0  eingesetzt) 
+ 
+f’<sub>(1)</sub> = 0 --> 
+
+6a * 1<sup>5</sup> + 5b * 1<sup>4</sup> + 4c * 1<sup>3</sup> + 3d * 1<sup>2</sup> = 0 --> 
+ 
+6a + 5b + 4c + 3d = 0       IV 
+ 
+I + III 
+ 
+ a - b + c - d =  3 
+ a + b + c + d = -1 
+-------------------
+2a     + 2c    = 2       V 
+ 
+I * 8 + II 
+ 
+ 8a -  8b +  8c - 8d = 24 
+64a + 32b + 16c + 8d = 48 
+--------------------------
+72a + 24b + 24c      = 72          VI 
+ 
+III * (-3) + IV 
+
+-3a - 3b - 3c - 3d = 3 
+ 6a + 5b + 4c + 3d = 0 
+-----------------------
+ 3a + 2b +  c      = 3             VII 
+ 
+VI + VII * (-12) 
+ 
+ 72a + 24b + 24c =  72 
+-36a - 24b - 12c = -36 
+-----------------------
+ 36a       + 12c =  36              VIII 
+
+V * (-6) + VIII 
+
+-12a - 12c = -12 
+ 36a + 12c =  36  
+-----------------      
+24a        = 24 |:24 
+ 
+         a = 1   
+ 
+a = 1 in V eingesetzt: 
+ 
+2 * 1 + 2c = 2 
+ 
+    2 + 2c = 2 |-2 
+ 
+        2c = 0 |:2 
+ 
+         c = 0 
+ 
+a = 1 und c = 0 in VII eingesetzt: 
+ 
+3 * 1 + 2b + 0 = 3 
+ 
+        3 + 2b = 3 |-3 
+ 
+            2b = 0 |:2 
+ 
+             b = 0 
+ 
+a = 1 und c = 0 und b = 0 in III eingesetzt: 
+ 
+1 + 0 + 0 + d = -1 
+ 
+        1 + d = -1 |-1 
+ 
+            d = -2 
+ 
+Gesuchte Funktionsgleichung: 
+ 
+<span style="color:red">f<sub>(x)</sub> = x<sup>6</sup> - 2x<sup>3</sup> + 1</span>
+
+</b></p></pre></body></html>

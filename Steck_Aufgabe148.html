@@ -1,0 +1,173 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steckbriefaufgaben</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 148
+
+Bei welcher Mengeneinheit liegt das Betriebsoptimum, 
+wenn Fixkosten von 9 GE vorliegen, bei 2 ME Kosten 
+von 69 GE, bei 6 ME welche von 93 GE und bei 10 ME 
+welche von 309 GE entstehen und der Betrieb mit einer 
+ertragsgesetzlichen Kostenfunktion arbeitet?           
+
+<img src="Aufgabe148.jpg" >
+
+Allgemeine Form einer ertragsgesetzlichen Kostenfunktion 3. Grades:
+
+K<sub>(x)</sub> = ax<sup>3</sup> + bx<sup>2</sup> + cx + d 
+
+K’<sub>(x)</sub> = 3ax<sup>2</sup> + 2bx + c 
+
+K’’<sub>(x)</sub> = 6ax + 2b  
+
+4 Bedingungen: 
+
+1. Wenn Fixkosten von 9 GE vorliegen bedeutet: 
+ 
+K<sub>(0)</sub> = 9 --> 
+
+a * 0<sup>3</sup> + b * 0<sup>2</sup> + c * 0 + d = 9 --> 
+
+d = 9 
+ 
+2. Bei 2 ME Kosten von 69 GE bedeutet: 
+(d = 9 eingesetzt)  
+ 
+K<sub>(2)</sub> = 69 --> 
+
+a * 2<sup>3</sup> + b * 2<sup>2</sup> + c * 2 + 9 = 69 -->  
+ 
+8a + 4b + 2c + 9 = 69 | -9 
+ 
+8a + 4b + 2c = 60        I 
+ 
+3. Bei 6 ME welche von 93 GE bedeutet: 
+(d = 9 eingesetzt) 
+ 
+K<sub>(6)</sub> = 93 --> 
+
+a * 6<sup>3</sup> + b * 6<sup>3</sup> + c * 6 + 9 = 93 -->  
+ 
+216a + 36b + 6c + 9 = 93 | -9 
+ 
+216a + 36b + 6c = 84        II 
+ 
+4. Und bei 10 ME welche von 309 GE bedeutet: 
+(d = 9 eingesetzt) 
+ 
+K<sub>(10)</sub> = 309 --> 
+
+a * 10<sup>3</sup> + b * 10<sup>2</sup> + c * 10 + 9 = 309 -->  
+ 
+1000a + 100b + 10c + 9 = 309 | -9 
+ 
+1000a + 100b + 10c = 300           III 
+ 
+I * (-3) + II  
+ 
+-24a - 12b - 6c = -180 
+216a + 36b + 6c =  84 
+-----------------------
+192a + 24b      = -96        IV 
+ 
+I * (-5) + III 
+ 
+ -40a -  20b - 10c = -300 
+1000a + 100b + 10c =  300 
+---------------------------
+ 960a +  80b       = 0            V 
+ 
+IV * 80 + V * (-24) 
+ 
+ 15360a + 1920b = -7680 
+-23040a - 1920b =  0 
+------------------------
+                
+ -7680a         = -7680 |:(-7680) 
+ 
+              a = 1   
+ 
+a = 1 in V eingesetzt: 
+ 
+960 * 1 + 80b = 0   |-960 
+ 
+          80b = -960 |:80 
+ 
+            b = -12  
+ 
+a = 1 und b = -12 in I eingesetzt: 
+ 
+8 * 1 + 4 * (-12) + 2c = 60 
+ 
+           8 - 48 + 2c = 60 
+ 
+              -40 + 2c = 60 |+40 
+ 
+                    2c = 100 |:2 
+ 
+                     c = 50 
+  
+Gesuchte Kostenfunktion: 
+ 
+K<sub>(x)</sub> = x<sup>3</sup> - 12x<sup>2</sup> + 50x + 9 
+ 
+Das Betriebsoptimum ist das Minimum der Stückkostenfunktion k<sub>(x)</sub>: 
+ 
+                   d    
+k’<sub>(x)</sub> = 2ax + b - ---- = 0 
+                   x<sup>2</sup>      
+ 
+ 
+                    9    
+k’<sub>(x)</sub> = 2x - 12 - ----- = 0 | *x<sup>2</sup> 
+                    x<sup>2</sup>     
+ 
+2x<sup>3</sup> - 12x<sup>2</sup> - 9 = 0 
+
+<img src="Aufgabe148_1.jpg" >
+ 
+Ermittlung der Nullstelle zwischen 6 und 7 mit dem 
+Newtonverfahren und Excel: 
+ 
+           k<sub>(x0)</sub>    
+x<sub>1</sub> = x<sub>0</sub> - ------- 
+           k’<sub>(x0)</sub>   
+ 
+<img src="Aufgabe148_2.jpg" >
+
+Der letzte Wert in der Spalte E ist der gesuchte. 
+Mit ausreichender Genauigkeit x0= 6,12 ME = 6,1 ME 
+gerundet Betriebsoptimum. 
+ 
+         x<sup>3</sup> - 12x<sup>2</sup> + 26x + 9 
+k<sub>(x)</sub> = ----------------------- = x<sup>2</sup> - 12x + 26 + 9/x 
+                  x  
+ 
+                  9    
+k’’<sub>(x)</sub> = 2 + 2 * ---- 
+                  x<sup>3</sup> 
+ 
+                       9 
+k’’<sub>(6,12)</sub> = 2 + 2 * -------  > 0 --> Minimum 
+                     6,12<sup>3</sup>   
+ 
+k<sub>(6,12)</sub> = 6,12<sup>2</sup> - 12 * 6,12 + 50 + 9/6,12 =  
+ 
+k<sub>(6,12)</sub> = 37,45 - 73,44 + 50 + 1,47 = 15,5 GE gerundet 
+ 
+<span style="color:red">Koordinaten des Betriebsoptimums (6,1|15,5)</span> 
+
+</b></p></pre></body></html>

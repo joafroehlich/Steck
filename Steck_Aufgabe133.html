@@ -1,0 +1,176 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steckbriefaufgaben</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 133
+
+Für eine ganzrationale Kostenfunktion 3. Grades 
+gelten folgende betriebliche Bedingungen: 
+Ein Bauteil kostet in der Herstellung 90 GE, die 
+variablen Kosten für 2 Bauteile betragen 56 GE, 
+die Grenzkosten betragen 27 GE pro Bauteil und 
+das Minimum der Grenzkosten liegt bei 8/3 Bauteilen. 
+Jedes Bauteil wird für 90 GE verkauft.  
+a) Wie hoch ist das Gewinnmaximum?  
+b) Bei wieviel ME liegt das Betriebsminimum? 
+
+<img src="Aufgabe133.jpg" >
+
+Allgemeine Form einer ganzrationalen Kostenfunktion 3. Grades: 
+
+K<sub>(x)</sub> = ax<sup>3</sup> + bx<sup>2</sup> + cx + d 
+
+K’<sub>(x)</sub> = 3ax<sup>2</sup> + 2bx + c 
+
+K’’<sub>(x)</sub> = 6ax + 2b  
+
+K<sub>v(x)</sub> = ax<sup>3</sup> + bx<sup>2</sup> + cx
+
+4 Bedingungen: 
+
+1. Ein Bauteil kostet in der Herstellung 90 GE bedeutet: 
+
+K<sub>(1)</sub> = 90 --> a * 1<sup>3</sup> + b * 1<sup>2</sup> + c * 1 + d = 90 -->  
+
+a + b + c + d = 90       I  
+
+2. Die variablen Kosten K<sub>v(x)</sub> für 2 Bauteile 
+betragen 56 GE bedeutet:
+
+K<sub>v(2)</sub> = 56 --> 
+
+a * 2<sup>3</sup> + b * 2<sup>2</sup> + c * 2 = 56 --> 
+
+8a + 4b + 2c = 56       II 
+
+3. Die Grenzkosten betragen 27 GE pro Bauteil  bedeutet: 
+
+K’<sub>(1)</sub> = 27 --> 
+
+3a * 1<sup>2</sup> + 2b * 1 + c = 27 --> 
+
+3a + 2b + c = 27      III 
+
+4. Das Minimum der Grenzkosten liegt bei 8/3 Bauteilen bedeutet: 
+
+(K’’<sub>(x)</sub> ist die erste Ableitung von K’<sub>(x)</sub>) 
+
+K’’<sub>(8/3)</sub> = 0 --> 
+
+6a * 8/3 + 2b = 0 --> 
+
+16a + 2b = 0           IV
+
+III * (-2) + II 
+
+-6a - 4b - 2c = -54 
+ 8a + 4b + 2c =  56
+--------------------
+ 2a           = 2 |:2 
+
+             a = 1 
+ 
+a = 1 in IV eingesetzt: 
+ 
+16 * 1 + 2b = 0 |-16 
+ 
+         2b = -16 |:2 
+ 
+          b = -8     
+ 
+a = 1 und b = -8 in II eingesetzt: 
+ 
+8  * 1 + 4 * (-8) + 2c = 56 
+ 
+           8 - 32 + 2c = 56 
+ 
+              -24 + 2c = 56 |+24 
+ 
+                    2c = 80 |:2 
+ 
+                     c = 40 
+ 
+a = 1 und b = -8 und c = 40 in I eingesetzt: 
+ 
+1 - 8 + 40 + d = 90 
+ 
+        33 + d = 90 |-33 
+ 
+             d = 57 
+ 
+Gesuchte Kostenfunktion: 
+ 
+K<sub>(x)</sub> = x<sup>3</sup> - 8x<sup>2</sup> + 40x + 57 
+ 
+Erlösfunktion E<sub>(x)</sub> = 90x: 
+ 
+Gewinnfunktion: 
+ 
+G<sub>(x)</sub> = E<sub>(x)</sub> - K<sub>(x)</sub> = 90x - (x<sup>3</sup> - 8x<sup>2</sup> + 40x + 57) 
+ 
+G<sub>(x)</sub> = 90x - x<sup>3</sup> + 8x<sup>2</sup> - 40x - 57 
+ 
+G<sub>(x)</sub> = -x<sup>3</sup> + 8x<sup>2</sup> + 50x - 57 
+ 
+Für das Maximum gilt: 
+ 
+G’<sub>(x)</sub> = 0 
+ 
+G’<sub>(x)</sub> = -3x<sup>2</sup> + 16x + 50 = 0  
+ 
+A, B, C - Formel: 
+ 
+A = -3, B = 16, C = 50 
+ 
+<img src="Aufgabe133a.jpg" >
+ 
+        -16 ±  &#8730;856 
+x<sub>1,2</sub> = ---------------  
+              -6 
+ 
+        -16 ± 29,26    
+x<sub>1,2</sub> = -------------- 
+             -6            
+ 
+      13,26                   
+x<sub>1</sub> = -------- = < 0 keine Lösung, negative ME 
+        -6          
+       
+       -45,26                            
+x<sub>1</sub> = ---------- = 7,5 ME gerundet 
+         -6                         
+ 
+G’’<sub>(x)</sub> = -6x + 16 
+ 
+G’’<sub>(7,5)</sub> = -6 * 7,5 + 16 = -45 + 16 = - 29 < 0 --> Maximum 
+  
+<span style="color:red">G<sub>max</sub></span> = G<sub>(7,5)</sub> = -7,5<sup>3</sup> + 8 * 7,5<sup>2</sup> + 50 * 7,5 - 57 = 
+
+<span style="color:red">= 346 GE gerundet</span>  
+ 
+b) Betriebsminimum --> k<sub>v</sub>’<sub>(x)</sub> = 0  
+ 
+         K<sub>v(x)</sub>      x<sup>3</sup> - 8x<sup>2</sup> + 40x   
+k<sub>(vx)</sub> = ------- = ------------------ = x² - 8x + 40 
+           x               x     
+ 
+k<sub>v</sub>’<sub>(x)</sub> = 2x - 8 = 0 |+8 
+ 
+     2x = 8 |:2 
+ 
+      <span style="color:red">x = 4 ME</span>
+
+</b></p></pre></body></html>

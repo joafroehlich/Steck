@@ -1,0 +1,236 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steckbriefaufgaben</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 131
+
+In der Massentierhaltung ist eine wichtige Größe, 
+wann das Tier Schlachtgewicht erreicht. 
+Messungen haben ergeben: 
+
+Anzahl Monate       0        2       4        5       6    
+Gewicht G in kg     1,5     30      67       80      88 
+
+Man hat festgestellt, dass die Gewichtszunahme 
+durch eine ganzrationale Funktion 4. Grades 
+beschrieben werden kann. 
+a) Welches Gewicht hat ein Tier nach einem Monat?  
+b) Nach wieviel Tagen ist die Gewichtszunahme maximal? 
+
+<img src="Aufgabe131.jpg" >
+
+Allgemeine Form einer ganzrationalen Funktion 4. Grades: 
+
+f<sub>(x)</sub> = ax<sup>4</sup> + bx<sup>3</sup> + cx<sup>2</sup> + dx + e 
+
+f’<sub>(x)</sub> = 4ax<sup>3</sup> + 3bx<sup>2</sup> + 2cx + d 
+
+f’’<sub>(x)</sub> = 12ax<sup>2</sup> + 6bx + 2c  
+
+5 Bedingungen: 
+
+1. Geht durch (0|1,5) bedeutet: 
+
+f<sub>(0)</sub> = 1,5  --> 
+
+a * 0<sup>4</sup> + b * 0<sup>3</sup> + c * 0<sup>2</sup> + d * 0 + e = 1,5 --> 
+
+e = 1,5 
+
+2. Geht durch (2|30) bedeutet: 
+(e = 1,5 eingesetzt) 
+
+f<sub>(2)</sub> = 30  --> 
+
+a * 2<sup>4</sup> + b * 2<sup>3</sup> + c * 2<sup>2</sup> + d * 2 + 1,5 = 30 -->  
+
+16a + 8b + 4c + 2d + 1,5 = 30 |-1,5 
+
+16a + 8b + 4c + 2d = 28,5       I 
+
+3. Geht durch (4|67) bedeutet: 
+(e = 1,5 eingesetzt) 
+
+f<sub>(4)</sub> = 67  --> 
+
+a * 4<sup>4</sup> + b * 4<sup>3</sup> + c * 4<sup>2</sup> + d * 4 + 1,5 = 67 -->  
+
+256a + 64b + 16c + 4d + 1,5 = 67 | -1,5
+
+256a + 64b + 16c + 4d = 65,5         II 
+
+4. Geht durch (5|80) bedeutet: 
+(e = 1,5 eingesetzt) 
+
+f<sub>(5)</sub> = 80  -->
+
+a * 5<sup>4</sup> + b * 5<sup>3</sup> + c * 5<sup>2</sup> + d * 5 + 1,5 = 80 -->  
+
+625a + 125b + 25c + 5d + 1,5 = 80 |-1,5 
+
+625a + 125b + 25c + 5d = 78,5        III 
+
+5. Geht durch (6|88) bedeutet: 
+(e = 1,5 eingesetzt) 
+
+f<sub>(6)</sub> = 88  --> 
+
+a * 6<sup>4</sup> + b * 6<sup>3</sup> + c * 6<sup>2</sup> + d * 6 + 1,5 = 88 -->  
+
+1296a + 216b + 36c + 6d + 1,5 = 88 |-1,5 
+
+1296a + 216b + 36c + 6d = 86,5     IV
+
+I * (-2) + II 
+
+-32a - 16b -  8c - 4d = -57 
+256a + 64b + 16c + 4d =  65,5
+------------------------------
+224a + 48b +  8c      = 8,5           V
+
+I * (-3) + IV 
+
+ -48a -  24b - 12c - 6d = -85,5 
+1296a + 216b + 36c + 6d =  86,5
+--------------------------------
+1248a + 192b + 24c      =   1           VI    
+
+I * (-2,5) + III 
+
+-40a -  20b - 10c - 5d = -71,25 
+625a + 125b + 25c + 5d =  78,5 
+-------------------------------
+585a + 105b + 15c      =   7,25               VII   
+ 
+V * (-3) + VI 
+
+-672a - 144b - 24c = -25,5 
+1248a + 192b + 24c =   1 
+---------------------------
+576a + 48b         = -24,5                  VIII 
+ 
+V * (-15) + VI * 8 
+
+-3360a - 720b - 120c = -127,5 
+ 4680a + 840b + 120c =   58 
+-----------------------------
+ 1320a + 120b        = -69,5                IX 
+ 
+VIII * (-5) + IX * 2 
+
+-2880a - 240b =  122,5 
+ 2640a + 240b = -139 
+-----------------------
+ -240a        = -16,5 |:(-240) 
+ 
+                 16,5     165      11   
+            a = ------ = ------ = ----- = 0,006875 
+                 240      2400     160   
+ 
+a = 0,06875 in VIII eingesetzt: 
+ 
+576 * 0,06875 + 48b = -24,5 
+ 
+         39,6 + 48b = -24,5  -39,6 
+ 
+                48b = -64,1 | :48 
+ 
+                          64,1       641     
+                 b  = - ------- = - ----- 
+                           48        480 
+ 
+a = 0,06875 und b = -641/480 in V eingesetzt: 
+ 
+224 * 0,06875 - 48 * (641/480) + 8c = 8,5 
+ 
+                   15,4 - 64,1 + 8c = 8,5 
+ 
+                         -48,7 + 8c = 8,5 |+48,7 
+ 
+                                 8c = 57,2 |:8 
+ 
+                                  c = 7,15   
+ 
+a = 0,06875 und b = - 641/480 und c = 7,15 in I eingesetzt: 
+ 
+16 * 0,06875 + 8 * (- 641/480) + 4 * 7,15 + 2d = 28,5 
+ 
+                      1,1 - 641/60 + 28,6 + 2d = 28,5 
+ 
+                            29,7 - 641/60 + 2d = 28,5 |+641/60 
+ 
+                                     29,7 + 2d = 641/60 + 28,5 |-29,7 
+ 
+                                            2d = 641/60 - 1,2 
+ 
+                                                  641 - 72  
+                                            2d = ---------- |:2 
+                                                     60   
+ 
+                                                  569    
+                                             d = ------ 
+                                                  120 
+ 
+f<sub>(x)</sub> = 0,06875x<sup>4</sup> - (641/480)x<sup>3</sup> + 7,15x<sup>2</sup> + (569/120)x + 1,5         
+ 
+f<sub>(1)</sub> = 0,006875 - 1,33548 + 7,15 + 4,74167 + 1,5 
+ 
+<span style="color:red">f<sub>(1)</sub> = 12,125 kg</span> 
+ 
+b)  
+ 
+Den stärksten Anstieg erhält man, wenn man das Maximum der ersten 
+Ableitung ermittelt: 
+ 
+f’<sub>(x)</sub> = (11/40)x<sup>3</sup> - (641/160)x<sup>2</sup> + 14,3x + 569/120 
+ 
+f’’<sub>(x)</sub> = 0 wegen Maximum 
+ 
+f’’<sub>(x)</sub> = (33/40)x² - (641/80)x + 14,3 = 0 | +80 
+ 
+66x<sup>2</sup> - 641x + 114,4 = 0 
+ 
+A, B, C - Formel 
+ 
+A = 66, B = -641, C = 114,4 
+ 
+        641 ± &#8730;(410881-302016)
+x1,2 = ------------------------  
+                 2 * 66 
+
+        641 ± &#8730;108865
+x<sub>1,2</sub> = -----------------  
+              132 
+ 
+        641 ± 329,9  
+x<sub>1,2</sub> = -------------  
+            132 
+ 
+       970,9                   
+x<sub>1</sub> = --------- = 7,36 Monate, > 6 keine Lösung 
+        132          
+       
+       311,1                            
+x<sub>2</sub> = --------- = 2,36 Monate  
+        132   
+        
+--> 2,36 * 30 = 70,8 --> 
+
+<span style="color:red">71 Tage gerundet</span>
+ 
+f’’’<sub>(2,36)</sub> = (66/40) * 2,36 - 641/80 = 3,894 - 8,0125 < 0 --> Maximum
+
+</b></p></pre></body></html>

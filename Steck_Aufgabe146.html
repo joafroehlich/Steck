@@ -1,0 +1,164 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steckbriefaufgaben</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 146
+
+Ein Arzneimittelhersteller will durch eine ganzrationale 
+Funktion 3. Grades beschreiben, wie sich die Konzentration 
+eines Medikaments nach der Einnahme abhängig von der Zeit 
+im Körper verändert, um sie dann für beliebige Zeiten 
+ablesen zu können. Zu Beginn liegt noch keine Konzentration 
+vor, nach 2 Stunden sind es 36 Einheiten und nach 3 Stunden 
+19,5. Er weiß, dass die höchste Konzentration nach 2 Stunden 
+erreicht ist. Wann beträgt sie 24,5 Einheiten? 
+
+<img src="Aufgabe146.jpg" >
+
+Allgemeine Form einer ganzrationalen Funktion 3. Grades: 
+
+f<sub>(x)</sub> = ax<sup>3</sup> + bx<sup>2</sup> + cx + d 
+
+f’<sub>(x)</sub> = 3ax<sup>2</sup> + 2bx + c 
+
+f’’<sub>(x)</sub> = 6ax + 2b  
+
+4 Bedingungen: 
+
+1. Zu Beginn liegt noch keine Konzentration vor, bedeutet: 
+
+f<sub>(0)</sub> = 0 --> 
+
+a * 0,4<sup>3</sup> + b * 0,4<sup>2</sup> + c * 0,4 + d = 0 --> 
+
+d = 0 
+
+2. Nach 2 Stunden sind es 36 Einheiten bedeutet:
+(d = 0 eingesetzt)  
+
+f<sub>(2)</sub> = 36 --> 
+
+a * 2<sup>3</sup> + b * 2<sup>2</sup> + c * 2 = 36 -->  
+
+8a + 4b + 2c = 36        I 
+
+3. .. und nach 3 Stunden 19,5 bedeutet: 
+(d = 0 eingesetzt) 
+
+f<sub>(3)</sub> = 19,5 --> 
+
+a * 3<sup>3</sup> + b * 3<sup>2</sup> + c * 3 = 19,5 -->  
+
+27a + 9b + 3c = 19,5        II 
+
+4. Er weiß, dass die höchste Konzentration nach 
+2 Stunden erreicht ist, bedeutet:  
+
+f’<sub>(2)</sub> = 0 --> 
+
+3a * 2<sup>2</sup> + 2b * 2 + c = 0 -->  
+
+12a + 4b + c = 0       III
+
+I * (-3) + II * 2 
+
+-24a - 12b - 6c = -108 
+ 54a + 18b + 6c =   39
+-----------------------
+ 30a +  6b      =  -69        IV 
+ 
+III * (-2) + I 
+ 
+-24a - 8b - 2c = 0 
+  8a + 4b + 2c = 36 
+---------------------
+     -16a - 4b = 36            V 
+ 
+IV * 2 + V * 3 
+ 
+ 60a + 12b = -138 
+-48a - 12b =  108 
+------------------
+       12a =  -30 |:12 
+ 
+         a = -2,5   
+ 
+a = - 2,5 in IV eingesetzt: 
+ 
+30 * (-2,5) + 6b = -69 
+ 
+        -75 + 6b = -69 |+75 
+ 
+              6b = 6 |:6 
+ 
+               b = 1      
+ 
+a = - 2,5 und b = 1 in I eingesetzt: 
+ 
+8 * (-2,5) + 4 * 1 + 2c = 36 
+ 
+           -20 + 4 + 2c = 36 
+ 
+               -16 + 2c = 36 |+16 
+ 
+                     2c = 52 |:2 
+ 
+                      c = 26 
+  
+Gesuchte Funktion: 
+ 
+f<sub>(x)</sub> = - 2,5x<sup>3</sup> + x<sup>2</sup> + 26x 
+ 
+Wann beträgt sie 24,5 Einheiten? 
+ 
+f(x) = 24,5 
+ 
+ 24,5 = -2,5x<sup>3</sup> + x<sup>2</sup> + 26x |- 24,5 
+
+-2,5x<sup>3</sup> + x<sup>2</sup> + 26x - 24,5 = 0 |*(-1) 
+ 
+ 2,5x<sup>3</sup> - x<sup>2</sup> - 26x + 24,5 = 0  
+ 
+Hornerschema: 
+ 
+         2,5     -1     -26      24,5     
+x = 1           2,5      1,5    -24,5    
+         2,5    1,5    -24,5      0 
+ 
+Lösung der quadratischen Gleichung: 
+ 
+2,5x<sup>2</sup>  + 1,5x - 24,5 = 0 |:2,5 
+ 
+     x<sup>2</sup> + 0,6x - 9,8 = 0 
+ 
+p, q - Formel: 
+ 
+p = 0,6, q = -9,8 
+ 
+<img src="Aufgabe146a.jpg" >
+
+x<sub>2,3</sub> = -0,3 ± &#8730;9,89
+ 
+x<sub>2,3</sub> = -0,3 ± 3,14    
+ 
+x<sub>2</sub> =  -0,3 + 3,14 = 2,84 
+ 
+x<sub>3</sub> = -0,3 - 3,14 = -3,44 keine Lösung, negative Zeit 
+ 
+<span style="color:red">Die Konzentration beträgt 24,5 Einheiten nach 1 h 
+und nach 2,84 h.</span> 
+ 
+</b></p></pre></body></html>
