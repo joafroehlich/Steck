@@ -61,7 +61,7 @@ a * 0<sup>3</sup> + b * 0<sup>2</sup> + c * 0 + d = 16 -->
 
 d = 16 
  
-2. Die Produktion von 4 ME kostet 48 GE bedeutet: 
+2. Die Produktion von 4 ME kostet 48 GE bedeutet:
 (d = 16 eingesetzt) 
 
 K<sub>(4)</sub> = 48 --> 
@@ -84,7 +84,7 @@ K’<sub>(2)</sub> = 4 -->
 4. Die Stückkosten für 3 ME sind 37/3 GE 
 bedeutet: 
  
-k<sub>v(3)</sub> = a * 3² + b * 3 + c + (16/3) = 37/3 -->  
+k<sub>v(3)</sub> = a * 3<sup>2</sup> + b * 3 + c + (16/3) = 37/3 -->  
  
 9a + 3b + c + 16/3 = 37/3 |-16/3 
  
@@ -154,10 +154,23 @@ dem Newtonverfahren und Excel:
  
            k<sub>(x0)</sub>    
 x<sub>1</sub> = x0 - ------- 
-           k’<sub>(x0)</sub>  
-           
-<img src="Aufgabe134_1.jpg" >
+           k’<sub>(x0)</sub> 
+        
+x0           k(x0)        k'(x0)       B1/C1  
+3,5          -3,75        31,5        -0,11904762
+3,61904762   0,2159594    35,1564626   0,00614281  
+3,61290481   0,0005925    34,9636293   1,6946E-05
+3,61288786   4,5021E-09   34,963098    1,2877E-10
+A            B            C            D
  
+x0 - D1
+3,61904762
+3,61290481
+3,61288786
+3,61288786
+E
+
+
 Der letzte Wert in der Spalte E ist der gesuchte. 
 Mit ausreichender Genauigkeit 
 
