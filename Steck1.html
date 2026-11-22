@@ -7,49 +7,108 @@
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Steckbriefaufgaben</title>
   
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
+  
 </head>
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button {background-color:white; font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
+
+    <main>
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Steckbriefaufgaben</p> 
 
-    <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
-		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+    <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die Schalter: Prüfen und Lösung.</span></p>
+		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es oder starten Sie eine Lösung.</span></p>
 
         
+<div class="check">
+
 <!--//Aufgabe 1-->
 
-  <pre><b><p class="Aufgabe">Aufgabe 1
+  <h2>Aufgabe 1</h2><p>
 
 Der Graph einer ganzrationalen Funktion 2. Grades 
 geht durch die Punkte A(0|0) und B(2|-3) und hat 
 in B eine Steigung von -4.
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-<img src="Aufgabe1.jpg" >
+<img src="Aufgabe1.jpg" ></p>
 
-<button  onclick="window.open('Steck_Aufgabe1.html');" >Lösung</button></pre></p>
+<button  onclick="window.open('Steck_Aufgabe1.html');" >Lösung</button></p>
 
 <!--//Aufgabe 2-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 2
+  <h2>Aufgabe 2</h2><p>
 
 Der Graph einer ganzrationalen Funktion 2. Grades 
 schneidet die x-Achse bei 4 und -4. Bei x = 4 
 schneidet er sie unter einem Winkel von 45°. 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = 0,125x<sup>2</sup> <input type="text" id="Eintrag2" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = 0,125x<sup>2</sup> <input type="text" id="Eintrag2" maxlength="2"  ></input> <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button></p></pre>
  
                       <script>
                         function Aufgabe2() { 
@@ -67,26 +126,26 @@ f<sub>(x)</sub> = 0,125x<sup>2</sup> <input type="text" id="Eintrag2" maxlength=
 
         <!--//Aufgabe 3-->                  
 
-  <pre><p class="Aufgabe">Aufgabe 3
+  <h2>Aufgabe 3</h2><p>
 
 Der Graph einer ganzrationalen Funktion 2. Grades 
 geht durch die Punkte (-1|0), (0|-1) und (1|0). 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-<img src="Aufgabe3.jpg" >
+<img src="Aufgabe3.jpg" ></p>
 
 <button  onclick="window.open('Steck_Aufgabe3.html');" >Lösung</button></pre></p>
 
 
-<!--//Aufgabe 4-->
+<!--//Aufgabe 4-->4
 
-<pre><p class ="Aufgabe" >Aufgabe 4
+<h2>Aufgabe 4</h2><p>
 
 Der Graph einer ganzrationalen Funktion 2. Grades 
 geht durch die Punkte (0|0), (1|0) und (2|3). 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
            
-f<sub>(x)</sub> = 1,5x<sup>2</sup> - <input type="text" id="Eintrag4" maxlength="3" size="1" style= background-color:yellow ></input> x <button id="Pruef4" onclick="Aufgabe4()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = 1,5x<sup>2</sup> - <input type="text" id="Eintrag4" maxlength="3"  ></input> x <button id="Pruef4" onclick="Aufgabe4()">Prüfen</button></p></pre>
  
                       <script>
                         function Aufgabe4() { 
@@ -103,27 +162,27 @@ f<sub>(x)</sub> = 1,5x<sup>2</sup> - <input type="text" id="Eintrag4" maxlength=
 
  <!--//Aufgabe 5-->  
 
-  <pre><p class="Aufgabe">Aufgabe 5
+  <h2>Aufgabe 5</h2><p>
 
 Alle Graphen einer ganzrationalen Funktion 
 2. Grades gehen durch die Punkte (-1|2) und (1|2). 
 Wie lautet die Funktionsgleichung dieser 
-Kurvenschar?
+Kurvenschar?</p>
  
-<img src="Aufgabe5.jpg" >
+<img src="Aufgabe5.jpg" ></p>
 
 <button  onclick="window.open('Steck_Aufgabe5.html');">Lösung</button></pre></p>
 
 <!--//Aufgabe 6-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 6
+  <h2>Aufgabe 6</h2><p>
 
 Alle Graphen einer ganzrationalen Funktion 
 2. Grades gehen durch die Punkte (2|0) und (-2|0). 
 Wie lautet die Funktionsgleichung dieser 
-Kurvenschar?
+Kurvenschar?</p>
 
-f<sub>(x)</sub> = ax<sup>2</sup> - <input type="text" id="Eintrag6" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef6" onclick="Aufgabe6()">Prüfen</button> </p></pre>
+f<sub>(x)</sub> = ax<sup>2</sup> - <input type="text" id="Eintrag6" maxlength="2"  ></input> <button id="Pruef6" onclick="Aufgabe6()">Prüfen</button> </p></pre>
  
                       <script>
                         function Aufgabe6() { 
@@ -140,27 +199,27 @@ f<sub>(x)</sub> = ax<sup>2</sup> - <input type="text" id="Eintrag6" maxlength="2
                       
   <!--//Aufgabe 7-->   
 
-  <pre><p class="Aufgabe">Aufgabe 7
+  <h2>Aufgabe 7</h2><p>
 
 Alle Graphen einer ganzrationalen Funktion 
 2. Grades gehen durch die Punkte A(2|0) und B(4|0) 
 und haben an der Stelle x = 3 ein Maximum. Wie 
-lautet die Funktionsgleichung dieser Kurvenschar?
+lautet die Funktionsgleichung dieser Kurvenschar?</p>
 
-<img src="Aufgabe7.jpg" >
+<img src="Aufgabe7.jpg" ></p>
  
 <button  onclick="window.open('Steck_Aufgabe7.html');" >Lösung</button></p></pre>
 
 <!--//Aufgabe 8-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 8
+  <h2>Aufgabe 8</h2><p>
 
 Der Graph einer ganzrationalen Funktion 2. Grades 
 geht durch die Punkte A(0|2) und B(6|8) und 
 berührt die x-Achse im Punkt (c|0). 
-Wie lautet seine Funktionsgleichung?      
+Wie lautet seine Funktionsgleichung?</p>      
 
-f<sub>(x)</sub> = 0,5(x - <input type="text" id="Eintrag8" maxlength="1" size="1" style= background-color:yellow ></input> )<sup>2</sup> <button id="Pruef8" onclick="Aufgabe8()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = 0,5(x - <input type="text" id="Eintrag8" maxlength="1"  ></input> )<sup>2</sup> <button id="Pruef8" onclick="Aufgabe8()">Prüfen</button></p></pre>
      
                       <script>
                         function Aufgabe8() { 
@@ -177,26 +236,26 @@ f<sub>(x)</sub> = 0,5(x - <input type="text" id="Eintrag8" maxlength="1" size="1
                       
   <!--//Aufgabe 9-->   
 
-  <pre><p class="Aufgabe">Aufgabe 9
+  <h2>Aufgabe 9</h2><p>
 
 Alle Graphen einer ganzrationalen Funktion 
 2. Grades gehen durch die Punkte (0|0) und (2|0) 
 und haben an der Stelle x = 1 ein Minimum. Wie 
-lautet die Funktionsgleichung dieser Kurvenschar?
+lautet die Funktionsgleichung dieser Kurvenschar?</p>
 
-<img src="Aufgabe9.jpg" >
+<img src="Aufgabe9.jpg" ></p>
 
 <button  onclick="window.open('Steck_Aufgabe9.html');" >Lösung</button></p></pre>
 
 <!--//Aufgabe 10-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 10
+  <h2>Aufgabe 10</h2><p>
 
 Der Graph einer ganzrationalen Funktion 2. Grades 
 geht durch die Punkte (-1|2), (1|3) und (3|2). 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = 0,25x<sup>2</sup> + <input type="text" id="Eintrag10" maxlength="3" size="1" style= background-color:yellow ></input> x + 2,75 <button id="Pruef10" onclick="Aufgabe10()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = 0,25x<sup>2</sup> + <input type="text" id="Eintrag10" maxlength="3"  ></input> x + 2,75 <button id="Pruef10" onclick="Aufgabe10()">Prüfen</button></p></pre>
  
                       <script>
                         function Aufgabe10() { 
@@ -214,26 +273,26 @@ f<sub>(x)</sub> = 0,25x<sup>2</sup> + <input type="text" id="Eintrag10" maxlengt
 
  <!--//Aufgabe 11-->   
 
-  <pre><p class="Aufgabe">Aufgabe 11
+  <h2>Aufgabe 11</h2><p>
 
 Der Graph einer ganzrationalen Funktion 2. Grades 
 geht durch die Punkte (-1|-3), (1|1) und (-2|1). 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-<img src="Aufgabe11.jpg" >
+<img src="Aufgabe11.jpg" ></p>
 
 <button  onclick="window.open('Steck_Aufgabe11.html');" >Lösung</button></p></pre>
 
 <!--//Aufgabe 12-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 12
+  <h2>Aufgabe 12</h2><p>
 
 Alle Graphen einer ganzrationalen Funktion 
 2. Grades gehen durch die Punkte (-4|0) und 
 (0|-4). Wie lautet die Funktionsgleichung 
-dieser Kurvenschar?
+dieser Kurvenschar?</p>
 
-f<sub>(x)</sub> = ax<sup>2</sup> + (4a - 1)x - <input type="text" id="Eintrag12" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef12" onclick="Aufgabe12()">Prüfen</button></p></pre><nobr>
+f<sub>(x)</sub> = ax<sup>2</sup> + (4a - 1)x - <input type="text" id="Eintrag12" maxlength="1"  ></input> <button id="Pruef12" onclick="Aufgabe12()">Prüfen</button></p></pre>
 
  
                       <script>
@@ -251,25 +310,25 @@ f<sub>(x)</sub> = ax<sup>2</sup> + (4a - 1)x - <input type="text" id="Eintrag12"
               
     <!--//Aufgabe 13--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 13
+    <h2>Aufgabe 13</h2><p>
 
 Eine nach oben geöffnete und um den Faktor 3 
 gestreckte Parabel hat ihren Scheitelpunkt im 
-Punkt (0|-2). Wie lautet ihre Funktionsgleichung?
+Punkt (0|-2). Wie lautet ihre Funktionsgleichung?</p>
 
-<img src="Aufgabe13.jpg" >
+<img src="Aufgabe13.jpg" ></p>
 
 <button  onclick="window.open('Steck_Aufgabe13.html');" >Lösung</button></p></pre>
 
 <!--//Aufgabe 14-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 14
+  <h2>Aufgabe 14</h2><p>
 
 Eine nach unten geöffnete Normalparabel hat ihren 
 Scheitelpunkt im Punkt (4|0). 
-Wie lautet ihre Funktionsgleichung?
+Wie lautet ihre Funktionsgleichung?</p>
        
-f<sub>(x)</sub> = - (x - <input type="text" id="Eintrag14" maxlength="1" size="1" style= background-color:yellow ></input> )<sup>2</sup> <button id="Pruef14" onclick="Aufgabe14()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = - (x - <input type="text" id="Eintrag14" maxlength="1"  ></input> )<sup>2</sup> <button id="Pruef14" onclick="Aufgabe14()">Prüfen</button></p></pre>
  
                       <script>
                         function Aufgabe14() { 
@@ -286,25 +345,25 @@ f<sub>(x)</sub> = - (x - <input type="text" id="Eintrag14" maxlength="1" size="1
                       
      <!--//Aufgabe 15--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 15
+    <h2>Aufgabe 15</h2><p>
 
 Eine um den Faktor 4 gestreckte Parabel hat 
 ihr Maximum bei (-2|3). 
-Wie lautet ihre Funktionsgleichung?
+Wie lautet ihre Funktionsgleichung?</p>
 
-<img src="Aufgabe15.jpg" >
+<img src="Aufgabe15.jpg" ></p>
 
 <button  onclick="window.open('Steck_Aufgabe15.html');" >Lösung</button></p></pre>
 
 <!--//Aufgabe 16-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 16
+  <h2>Aufgabe 16</h2><p>
 
 Eine um den Faktor 0,5 gestauchte und nach oben 
 geöffnete Parabel geht durch die Punkte (4|0) 
-und (2|0). Wie lautet ihre Funktionsgleichung?
+und (2|0). Wie lautet ihre Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = 0,5x<sup>2</sup> <input type="text" id="Eintrag16" maxlength="2" size="1" style= background-color:yellow ></input> x + 4 <button id="Pruef16" onclick="Aufgabe16()">Prüfen</button></p></b></pre>
+f<sub>(x)</sub> = 0,5x<sup>2</sup> <input type="text" id="Eintrag16" maxlength="2"  ></input> x + 4 <button id="Pruef16" onclick="Aufgabe16()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe16() { 
@@ -319,7 +378,7 @@ f<sub>(x)</sub> = 0,5x<sup>2</sup> <input type="text" id="Eintrag16" maxlength="
                          
                       </script>
                       
-<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a></div></main>
                     
         <script>
             document.body.addEventListener("input", function(inputEvent) {
