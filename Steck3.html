@@ -7,18 +7,76 @@
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Steckbriefaufgaben</title>
   
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
+  
 </head>
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button {background-color:white; font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
+
+    <main>
+
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Steckbriefaufgaben</p> 
@@ -26,30 +84,32 @@
     <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
 
-  <!--//Aufgabe 81-->                     
-                      
-    <pre><b><p class="Aufgabe">Aufgabe 81
+  <div class="check">
+
+<!--//Aufgabe 81-->
+
+  <h2>Aufgabe 81</h2><p>
 
 Der Graph einer ganzrationalen Funktion 4. Grades 
 berührt im Punkt (2|0) die x-Achse, hat im Punkt 
 (0|0) einen Wendepunkt, und die Wendetangente 
 schneidet die x-Achse unter einem Winkel von 45°.
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-<img src="Aufgabe81.jpg" >
+<img src="Aufgabe81.jpg" ></p>
 
 <button  onclick="window.open('Steck_Aufgabe81.html');" >Lösung</button></p></pre>
 
 <!--//Aufgabe 82-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 82
+  <h2>Aufgabe 82</h2><p>
 
 Der Graph einer achsensymmetrischen ganzrationalen 
 Funktion 4. Grades hat in (2|0) einen Wendepunkt, 
 und  die Wendetangente hat eine Steigung von -2. 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = 0,03125x<sup>4</sup> - <input type="text" id="Eintrag82" maxlength="4" size="1" style= background-color:yellow ></input> x<sup>2</sup> <button id="Pruef82" onclick="Aufgabe82()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = 0,03125x<sup>4</sup> - <input type="text" id="Eintrag82" maxlength="4"  ></input> x<sup>2</sup> <button id="Pruef82" onclick="Aufgabe82()">Prüfen</button></p></pre>
 
                       <script>
                         function Aufgabe82() { 
@@ -66,28 +126,28 @@ f<sub>(x)</sub> = 0,03125x<sup>4</sup> - <input type="text" id="Eintrag82" maxle
                       
 <!--//Aufgabe 83-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 83
+    <h2>Aufgabe 83</h2><p>
 
 Der Graph einer achsensymmetrischen ganzrationalen 
 Funktion 4. Grades hat in (0|-4) einen Tiefpunkt 
 und berührt die x-Achse bei 2 und -2. 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-<img src="Aufgabe83.jpg" > 
+<img src="Aufgabe83.jpg" ></p> 
 
 <button  onclick="window.open('Steck_Aufgabe83.html');" >Lösung</button></p></pre>
 
 <!--//Aufgabe 84-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 84
+  <h2>Aufgabe 84</h2><p>
 
 Der Graph einer ganzrationalen Funktion 4. Grades 
 hat einen Wendepunkt bei x = 3, einen im Punkt 
 (-2|-81) mit der Steigung 90 und schneidet die 
 x-Achse bei -1. 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = x<sup>4</sup> - 2x<sup>3</sup> - <input type="text" id="Eintrag84" maxlength="2" size="1" style= background-color:yellow ></input> x<sup>2</sup> + 2x + 35 <button id="Pruef84" onclick="Aufgabe84()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = x<sup>4</sup> - 2x<sup>3</sup> - <input type="text" id="Eintrag84" maxlength="2"  ></input> x<sup>2</sup> + 2x + 35 <button id="Pruef84" onclick="Aufgabe84()">Prüfen</button></p></pre>
 
 
                       <script>
@@ -105,27 +165,27 @@ f<sub>(x)</sub> = x<sup>4</sup> - 2x<sup>3</sup> - <input type="text" id="Eintra
                       
 <!--//Aufgabe 85-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 85
+    <h2>Aufgabe 85</h2><p>
 
 Der Graph einer achsensymmetrischen ganzrationalen 
 Funktion 4. Grades hat in (2|0) einen Wendepunkt 
 mit der Steigung - 4/3.
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-<img src="Aufgabe85.jpg" >
+<img src="Aufgabe85.jpg" ></p>
 
 <button  onclick="window.open('Steck_Aufgabe85.html');" >Lösung</button></p></pre>
 
 <!--//Aufgabe 88-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 86
+  <h2>Aufgabe 86</h2><p>
 
 Der Graph einer achsensymmetrischen ganzrationalen 
 Funktion 4. Grades geht durch den Punkt (0|-4) und 
 hat in (-4|0) eine waagerechte Tangente. 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = - (1/ <input type="text" id="Eintrag86" maxlength="2" size="1" style= background-color:yellow ></input> )x<sup>4</sup> + 0,5x<sup>2</sup> - 4 <button id="Pruef86" onclick="Aufgabe86()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = - (1/ <input type="text" id="Eintrag86" maxlength="2"  ></input> )x<sup>4</sup> + 0,5x<sup>2</sup> - 4 <button id="Pruef86" onclick="Aufgabe86()">Prüfen</button></p></pre>
 
 
                       <script>
@@ -143,28 +203,28 @@ f<sub>(x)</sub> = - (1/ <input type="text" id="Eintrag86" maxlength="2" size="1"
                       
 <!--//Aufgabe 87-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 87
+    <h2>Aufgabe 87</h2><p>
 
 Der Graph einer ganzrationalen Funktion 4. Grades 
 hat im Wendepunkt (0|0) und an der Stelle x = 6 
-waagerechte Tangenten und schneidet die x-Achse 
+waagerechte Tangenten und schneidet die <br class="br-desk">x-Achse 
 an einer weiteren Stelle mit der Steigung -8. 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-<img src="Aufgabe87a.jpg" > 
+<img src="Aufgabe87a.jpg" ></p> 
 
-<button  onclick="window.open('Steck_Aufgabe87.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Steck_Aufgabe87.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 88-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 88
+  <h2>Aufgabe 88</h2><p>
 
 Der Graph einer ganzrationalen Funktion 4. Grades 
 hat im Punkt (0|0) eine waagerechte Tangente und 
 in (-2|2) einen Sattelpunkt. 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = (3/8)x<sup>4</sup> - 2x<sup>3</sup> + <input type="text" id="Eintrag88" maxlength="1" size="1" style= background-color:yellow ></input> x<sup>2</sup> <button id="Pruef88" onclick="Aufgabe88()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = (3/8)x<sup>4</sup> - 2x<sup>3</sup> + <input type="text" id="Eintrag88" maxlength="1"  ></input> x<sup>2</sup> <button id="Pruef88" onclick="Aufgabe88()">Prüfen</button></p></pre>
 
                       <script>
                         function Aufgabe88() { 
@@ -181,27 +241,27 @@ f<sub>(x)</sub> = (3/8)x<sup>4</sup> - 2x<sup>3</sup> + <input type="text" id="E
                       
 <!--//Aufgabe 89-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 89
+    <h2>Aufgabe 89</h2><p>
 
 Der Graph einer achsensymmetrischen ganzrationalen 
 Funktion 4. Grades hat im Wendepunkt (3|31,5) die 
 Steigung -18.
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-<img src="Aufgabe89.jpg" > 
+<img src="Aufgabe89.jpg" ></p> 
 
-<button  onclick="window.open('Steck_Aufgabe89.html');" >Lösung</button></p></pre>    
+<button  onclick="window.open('Steck_Aufgabe89.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 90-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 90
+  <h2>Aufgabe 90</h2><p>
 
 Die zweite Ableitung einer ganzrationalen 
-Funktion 4. Grades lautet 12x<sup>2</sup> -6. 
+Funktion 4. Grades lautet <br class="br-desk">12x<sup>2</sup> -6. 
 Ihr Graph geht durch (1|2) und (-2|3). 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = x<sup>4</sup> - 3x<sup>2</sup> + ( <input type="text" id="Eintrag90" maxlength="1" size="1" style= background-color:yellow ></input> /3)x + 7/3 <button id="Pruef90" onclick="Aufgabe90()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = x<sup>4</sup> - 3x<sup>2</sup> + ( <input type="text" id="Eintrag90" maxlength="1"  ></input> /3)x + 7/3 <button id="Pruef90" onclick="Aufgabe90()">Prüfen</button></p></pre>
 
 
                       <script>
@@ -219,27 +279,27 @@ f<sub>(x)</sub> = x<sup>4</sup> - 3x<sup>2</sup> + ( <input type="text" id="Eint
                       
 <!--//Aufgabe 91-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 91
+    <h2>Aufgabe 91</h2><p>
 
 Der Graph einer achsensymmetrischen ganzrationalen 
 Funktion 4. Grades hat im Punkt (2|0) die 
 Steigung 2 und bei x = -1 einen Wendepunkt. 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-<img src="Aufgabe91.jpg" >
+<img src="Aufgabe91.jpg" ></p>
 
-<button  onclick="window.open('Steck_Aufgabe91.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Steck_Aufgabe91.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 92-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 92
+  <h2>Aufgabe 92</h2><p>
 
 Der Graph einer ganzrationalen Funktion 4. Grades 
 hat im Punkt (0|0) die Wendetangente y = x und 
 im Punkt (2|4) die Steigung 0. 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = -0,5x<sup>4</sup> + <input type="text" id="Eintrag92" maxlength="4" size="1" style= background-color:yellow ></input> x<sup>3</sup> + x <button id="Pruef92" onclick="Aufgabe92()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = -0,5x<sup>4</sup> + <input type="text" id="Eintrag92" maxlength="4"  ></input> x<sup>3</sup> + x <button id="Pruef92" onclick="Aufgabe92()">Prüfen</button></p></pre>
 
  
                       <script>
@@ -257,28 +317,28 @@ f<sub>(x)</sub> = -0,5x<sup>4</sup> + <input type="text" id="Eintrag92" maxlengt
                       
 <!--//Aufgabe 93-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 93
+    <h2>Aufgabe 93</h2><p>
 
 Der Graph einer achsensymmetrischen ganzrationalen 
 Funktion 4. Grades geht durch den Koordinate-
 nursprung und schneidet die x-Achse an der Stelle 
 x = 3 mit der Steigung -48. 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-<img src="Aufgabe93.jpg" >
+<img src="Aufgabe93.jpg" ></p>
 
-<button  onclick="window.open('Steck_Aufgabe93.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Steck_Aufgabe93.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 94-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 94
+  <h2>Aufgabe 94</h2><p>
 
 Der Graph einer achsensymmetrischen ganzrationalen 
 Funktion 4. Grades hat in (2|- 20/3) einen 
 Wendepunkt mit einer Steigung von -16/3. 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = (1/12)x<sup>4</sup> - <input type="text" id="Eintrag94" maxlength="1" size="1" style= background-color:yellow ></input> x<sup>2</sup> <button id="Pruef94" onclick="Aufgabe94()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = (1/12)x<sup>4</sup> - <input type="text" id="Eintrag94" maxlength="1"  ></input> x<sup>2</sup> <button id="Pruef94" onclick="Aufgabe94()">Prüfen</button></p></pre>
  
  
                       <script>
@@ -296,27 +356,27 @@ f<sub>(x)</sub> = (1/12)x<sup>4</sup> - <input type="text" id="Eintrag94" maxlen
 
 <!--//Aufgabe 95-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 95
+    <h2>Aufgabe 95</h2><p>
 
 Der Graph einer ganzrationalen Funktion 4. Grades 
 hat im Punkt (0|0) einen Sattelpunkt und im Punkt 
 (1|1) einen Wendepunkt. 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-<img src="Aufgabe95.jpg" >
+<img src="Aufgabe95.jpg" ></p>
 
-<button  onclick="window.open('Steck_Aufgabe95.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Steck_Aufgabe95.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 96-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 96
+  <h2>Aufgabe 96</h2><p>
 
 Der Graph einer ganzrationalen Funktion 4. Grades 
-berührt an der Stelle x = -1 die x-Achse und hat 
+berührt an der Stelle <br class="br-desk">x = -1 die x-Achse und hat 
 in (2|6,75) einen Sattelpunkt. 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = 0,25x<sup>4</sup> - x<sup>3</sup> + 4x + <input type="text" id="Eintrag96" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef96" onclick="Aufgabe96()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = 0,25x<sup>4</sup> - x<sup>3</sup> + 4x + <input type="text" id="Eintrag96" maxlength="4"  ></input> <button id="Pruef96" onclick="Aufgabe96()">Prüfen</button></p></pre>
 
  
                       <script>
@@ -334,28 +394,28 @@ f<sub>(x)</sub> = 0,25x<sup>4</sup> - x<sup>3</sup> + 4x + <input type="text" id
 
 <!--//Aufgabe 97-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 97
+    <h2>Aufgabe 97</h2><p>
 
 Der Graph einer achsensymmetrischen ganzrationalen 
 Funktion 4. Grades geht durch den Punkt (0|2) und 
 hat in (1|0) einen Tiefpunkt. 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-<img src="Aufgabe97.jpg" >
+<img src="Aufgabe97.jpg" ></p>
 
-<button  onclick="window.open('Steck_Aufgabe97.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Steck_Aufgabe97.html');" >Lösung</button></p>  
 
  <!--//Aufgabe 98-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 98
+  <h2>Aufgabe 98</h2><p>
 
 Der Graph einer ganzrationalen Funktion 4. Grades 
 geht durch den Punkt (-2|-4), hat im Koordinaten-
 ursprung  ein relatives Minimum und im Punkt 
 (-1|0) die Steigung 3.
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = 2x<sup>4</sup> + <input type="text" id="Eintrag98" maxlength="1" size="1" style= background-color:yellow ></input> x<sup>3</sup> + 5x<sup>2</sup> <button id="Pruef98" onclick="Aufgabe98()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = 2x<sup>4</sup> + <input type="text" id="Eintrag98" maxlength="1"  ></input> x<sup>3</sup> + 5x<sup>2</sup> <button id="Pruef98" onclick="Aufgabe98()">Prüfen</button></p></pre>
 
                       <script>
                         function Aufgabe98() { 
@@ -372,29 +432,29 @@ f<sub>(x)</sub> = 2x<sup>4</sup> + <input type="text" id="Eintrag98" maxlength="
                       
 <!--//Aufgabe 99-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 99
+    <h2>Aufgabe 99</h2><p>
 
 Der Graph einer achsensymmetrischen ganzrationalen 
 Funktion 4. Grades hat Wendepunkte, die jeweils 
 eine Einheit von der y-Achse und 1,5 Einheiten von 
 der x-Achse entfernt liegen und ein relatives 
 Maximum im Punkt (0|4). 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-<img src="Aufgabe99.jpg" >
+<img src="Aufgabe99.jpg" ></p>
 
-<button  onclick="window.open('Steck_Aufgabe99.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Steck_Aufgabe99.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 100-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 100
+  <h2>Aufgabe 100</h2><p>
 
 Der Graph einer achsensymmetrischen ganzrationalen 
 Funktion 4. Grades berührt bei x = 2 die x-Achse 
 und geht durch den Punkt (0|8). 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = <input type="text" id="Eintrag100" maxlength="3" size="1" style= background-color:yellow ></input> x<sup>4</sup> + 4x<sup>2</sup> + 8 <button id="Pruef100" onclick="Aufgabe100()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = <input type="text" id="Eintrag100" maxlength="3"  ></input> x<sup>4</sup> + 4x<sup>2</sup> + 8 <button id="Pruef100" onclick="Aufgabe100()">Prüfen</button></p></pre>
 
 
                       <script>
@@ -412,28 +472,28 @@ f<sub>(x)</sub> = <input type="text" id="Eintrag100" maxlength="3" size="1" styl
                       
 <!--//Aufgabe 101-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 101
+    <h2>Aufgabe 101</h2><p>
 
 Der Graph einer achsensymmetrischen ganzrationalen 
 Funktion 4. Grades hat Nullstellen bei -5 und 3 
 und geht durch denPunkt (0|1). 
-Wie lautet seine Funktionsgleichung? 
+Wie lautet seine Funktionsgleichung?</p> 
 
-<img src="Aufgabe101.jpg" >
+<img src="Aufgabe101.jpg" ></p>
 
-<button  onclick="window.open('Steck_Aufgabe101.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Steck_Aufgabe101.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 102-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 102
+  <h2>Aufgabe 102</h2><p>
 
 Der Graph einer ganzrationalen Funktion 4. Grades 
 hat bei (0|0) einen Extremwert und bei (2|0) 
-einen Wendepunkt mit einer zur Geraden y = -4x 
+einen Wendepunkt mit einer zur Geraden<br class="br-desk"> y = -4x 
 parallelen Tangente. 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = x<sup>4</sup> - <input type="text" id="Eintrag102" maxlength="1" size="1" style= background-color:yellow ></input> x<sup>3</sup> + 6x<sup>2</sup> <button id="Pruef102" onclick="Aufgabe102()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = x<sup>4</sup> - <input type="text" id="Eintrag102" maxlength="1"  ></input> x<sup>3</sup> + 6x<sup>2</sup> <button id="Pruef102" onclick="Aufgabe102()">Prüfen</button></p></pre>
 
 
                       <script>
@@ -451,29 +511,29 @@ f<sub>(x)</sub> = x<sup>4</sup> - <input type="text" id="Eintrag102" maxlength="
                       
 <!--//Aufgabe 103-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 103
+    <h2>Aufgabe 103</h2><p>
 
 Von einer ganzrationalen Funktion 4. Grades 
 sind bekannt: 
-f<sub>(0)</sub> = 0, f<sub>(5)</sub> = 125, f'<sub>(1)</sub> = 55, 
+f<sub>(0)</sub> = 0, <br class="br-desk">f<sub>(5)</sub> = 125, f'<sub>(1)</sub> = 55, 
 f''<sub>(0)</sub> = 90 und f'''<sub>(0)</sub> = 78.
-Wie lautet die Funktionsgleichung?
+Wie lautet die Funktionsgleichung?</p>
 
-<img src="Aufgabe103.jpg" >
+<img src="Aufgabe103.jpg" ></p>
 
-<button  onclick="window.open('Steck_Aufgabe103.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Steck_Aufgabe103.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 104-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 104
+  <h2>Aufgabe 104</h2><p>
 
 Der Graph einer ganzrationalen Funktion 4. Grades 
 schneidet die y-Achse bei 4, berührt die x-Achse 
 bei x = 2 und hat im Punkt (1|2,25) die 
 Steigung -3. 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = <input type="text" id="Eintrag104" maxlength="4" size="1" style= background-color:yellow ></input> x<sup>4</sup> - 2x<sup>2</sup> + 4 <button id="Pruef104" onclick="Aufgabe104()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = <input type="text" id="Eintrag104" maxlength="4"  ></input> x<sup>4</sup> - 2x<sup>2</sup> + 4 <button id="Pruef104" onclick="Aufgabe104()">Prüfen</button></p></pre>
 
                       <script>
                         function Aufgabe104() { 
@@ -490,29 +550,29 @@ f<sub>(x)</sub> = <input type="text" id="Eintrag104" maxlength="4" size="1" styl
                       
 <!--//Aufgabe 105-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 105
+    <h2>Aufgabe 105</h2><p>
 
 Der Graph einer achsensymmetrischen ganzrationalen 
 Funktion 4. Grades geht durch den Punkt 24 auf der
 y-Achse, hat an der Stelle x = 1 die Steigung -36 
 und geht durch (3|240). 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-<img src="Aufgabe105.jpg" >
+<img src="Aufgabe105.jpg" ></p>
 
-<button  onclick="window.open('Steck_Aufgabe105.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Steck_Aufgabe105.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 106-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 106
+  <h2>Aufgabe 106</h2><p>
 
 Der Graph einer achsensymmetrischen ganzrationalen 
 Funktion 4. Grades hat eine Nullstelle bei x = 4, 
 an der Stelle x = 1 eine Tangente parallel zur 
 Geraden y = -36x + 82 und geht durch den Punkt 
-(3|-35). Wie lautet seine Funktionsgleichung?
+(3|-35). Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = x<sup>4</sup> - <input type="text" id="Eintrag106" maxlength="2" size="1" style= background-color:yellow ></input> x<sup>2</sup> + 64 <button id="Pruef106" onclick="Aufgabe106()">Prüfen</button></p></b></pre>
+f<sub>(x)</sub> = x<sup>4</sup> - <input type="text" id="Eintrag106" maxlength="2"  ></input> x<sup>2</sup> + 64 <button id="Pruef106" onclick="Aufgabe106()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe106() { 
@@ -527,7 +587,7 @@ f<sub>(x)</sub> = x<sup>4</sup> - <input type="text" id="Eintrag106" maxlength="
                          
                       </script>
                       
-<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a></div></main>
                     
         <script>
             document.body.addEventListener("input", function(inputEvent) {
