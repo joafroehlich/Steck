@@ -11,14 +11,67 @@
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button {background-color:white; font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
+
+    <main>
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Steckbriefaufgaben</p> 
@@ -26,29 +79,31 @@
     <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
 
-<!--//Aufgabe 107-->                     
-                
-    <pre><b><p class="Aufgabe">Aufgabe 107
+<div class="check">
+
+<!--//Aufgabe 107-->
+
+  <h2>Aufgabe 107</h2><p>
 
 Der Graph einer punktsymmetrischen ganzrationalen
 Funktion 5. Grades hat in (0|0) einen Sattelpunkt 
 und in (2|-16/15) einen Tiefpunkt. 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-<img src="Aufgabe107.jpg" >
+<img src="Aufgabe107.jpg" ></p>
 
-<button  onclick="window.open('Steck_Aufgabe107.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Steck_Aufgabe107.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 108-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 108
+  <h2>Aufgabe 108</h2><p>
 
 Der Graph einer ganzrationalen Funktion 5. Grades
 geht durch (0|0), hat in (-1|-2/3) einen Wende-
 punkt mit der Steigung 1,25 und einen bei 
-(-2|-4/3). Wie lautet seine Funktionsgleichung?
+(-2|-4/3). Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = 0,25x<sup>5</sup> + <input type="text" id="Eintrag108" maxlength="4" size="1" style= background-color:yellow ></input> x<sup>4</sup> + (5/3)x<sup>3</sup> <button id="Pruef108" onclick="Aufgabe108()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = 0,25x<sup>5</sup> + <input type="text" id="Eintrag108" maxlength="4"  ></input> x<sup>4</sup> + (5/3)x<sup>3</sup> <button id="Pruef108" onclick="Aufgabe108()">Prüfen</button></p></pre>
 
                       <script>
                         function Aufgabe108() { 
@@ -65,28 +120,28 @@ f<sub>(x)</sub> = 0,25x<sup>5</sup> + <input type="text" id="Eintrag108" maxleng
 
 <!--//Aufgabe 109-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 109
+    <h2>Aufgabe 109</h2><p>
 
 Der Graph einer ganzrationalen Funktion 6. Grades
 geht durch die Punkte (-1|4) und (2|49), hat in 
 (0|1) einen Wendepunkt mit waagerechter Tangente 
 und in (1|0) einen Tiefpunkt.
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-<img src="Aufgabe109.jpg" >
+<img src="Aufgabe109.jpg" ></p>
 
-<button  onclick="window.open('Steck_Aufgabe109.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Steck_Aufgabe109.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 110-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 110
+  <h2>Aufgabe 110</h2><p>
 
 Der Graph einer ganzrationalen Funktion 6. Grades
 berührt die x-Achse im Nullpunkt, und hat in 
 (1|1) und (-1|1) Wendepunkte mit waagerechten 
-Tangenten. Wie lautet seine Funktionsgleichung?
+Tangenten. Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = x<sup>6</sup> - <input type="text" id="Eintrag110" maxlength="1" size="1" style= background-color:yellow ></input> x<sup>4</sup> + 3x<sup>2</sup> <button id="Pruef110" onclick="Aufgabe110()">Prüfen</button></p></pre> 
+f<sub>(x)</sub> = x<sup>6</sup> - <input type="text" id="Eintrag110" maxlength="1"  ></input> x<sup>4</sup> + 3x<sup>2</sup> <button id="Pruef110" onclick="Aufgabe110()">Prüfen</button></p>
     
  
                       <script>
@@ -104,27 +159,27 @@ f<sub>(x)</sub> = x<sup>6</sup> - <input type="text" id="Eintrag110" maxlength="
                       
 <!--//Aufgabe 111-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 111
+    <h2>Aufgabe 111</h2><p>
 
 Der Graph einer zu (0|0) punktsymmetrischen 
 ganzrationalen Funktion 5. Grades hat in (1|1) 
 die Steigung 0 und in (2|f(2)) einen Wendepunkt. 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-<img src="Aufgabe111.jpg" >
+<img src="Aufgabe111.jpg" ></p>
 
-<button  onclick="window.open('Steck_Aufgabe111.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Steck_Aufgabe111.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 112-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 112
+  <h2>Aufgabe 112</h2><p>
 
 Der Graph einer zu (0|0) punktsymmetrischen 
 ganzrationalen Funktion 5. Grades hat in (0|0) 
 die Tangente y = 7x und in(1|0) einen Wendepunkt.
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = <input type="text" id="Eintrag112" maxlength="1" size="1" style= background-color:yellow ></input> x<sup>5</sup> - 10x<sup>3</sup> + 7x <button id="Pruef112" onclick="Aufgabe112()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = <input type="text" id="Eintrag112" maxlength="1"  ></input> x<sup>5</sup> - 10x<sup>3</sup> + 7x <button id="Pruef112" onclick="Aufgabe112()">Prüfen</button></p></pre>
 
                        <script>
                         function Aufgabe112() { 
@@ -141,28 +196,28 @@ f<sub>(x)</sub> = <input type="text" id="Eintrag112" maxlength="1" size="1" styl
                       
 <!--//Aufgabe 113-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 113
+    <h2>Aufgabe 113</h2><p>
 
 Der Graph einer zu (0|0) punktsymmetrischen 
 ganzrationalen Funktion 5. Grades hat in (-1|1) 
 einen Wendepunkt mit der Steigung 3. 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-<img src="Aufgabe113.jpg" > 
+<img src="Aufgabe113.jpg" ></p> 
 
-<button  onclick="window.open('Steck_Aufgabe113.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Steck_Aufgabe113.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 114-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 114
+  <h2>Aufgabe 114</h2><p>
 
 Der Graph einer zu (0|0) punktsymmetrischen 
 ganzrationalen Funktion 5. Grades hat im 
 Nullpunkt die Steigung 2 und in (-1|0) 
 einen Wendepunkt. 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = ( <input type="text" id="Eintrag114" maxlength="1" size="1" style= background-color:yellow ></input> /7)x<sup>5</sup> - (20/7)x<sup>3</sup> + 2x <button id="Pruef114" onclick="Aufgabe114()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = ( <input type="text" id="Eintrag114" maxlength="1"  ></input> /7)x<sup>5</sup> - (20/7)x<sup>3</sup> + 2x <button id="Pruef114" onclick="Aufgabe114()">Prüfen</button></p></pre>
 
  
                       <script>
@@ -180,29 +235,29 @@ f<sub>(x)</sub> = ( <input type="text" id="Eintrag114" maxlength="1" size="1" st
                       
 <!--//Aufgabe 115-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 115
+    <h2>Aufgabe 115</h2><p>
 
 Der Graph einer ganzrationalen Funktion 5. Grades
 berührt die x-Achse bei 1 und 2, wechselt bei 3 
 das Vorzeichen und geht durch (0|24). 
-Wie lautet seine Funktionsgleichung?
+Wie lautet seine Funktionsgleichung?</p>
 
-<img src="Aufgabe115.jpg" >
+<img src="Aufgabe115.jpg" ></p>
 
-<button  onclick="window.open('Steck_Aufgabe115.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Steck_Aufgabe115.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 116-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 116
+  <h2>Aufgabe 116</h2><p>
 
 Der Graph einer ganzrationalen Funktion 5. Grades
 geht durch den Punkt (0|1), berührt die x-Achse 
 bei -5 und wechselt bei x = 1, -2 und -3 das 
-Vorzeichen. Wie lautet seine Funktionsgleichung?
+Vorzeichen. Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = -(1/20)x<sup>5</sup> - (7/75)x<sup>4</sup> - (11/ <input type="text" id="Eintrag116" maxlength="2" size="1" style= background-color:yellow ></input> )x<sup>3</sup> - <br>- (58/75)x<sup>2</sup> +(7/30) + 1 
+f<sub>(x)</sub> = -(1/20)x<sup>5</sup> - (7/75)x<sup>4</sup> - (11/ <input type="text" id="Eintrag116" maxlength="2"  ></input> )x<sup>3</sup> - <br>- (58/75)x<sup>2</sup> +(7/30) + 1 
 
-<button id="Pruef116" onclick="Aufgabe116()">Prüfen</button></p></b></pre>
+<button id="Pruef116" onclick="Aufgabe116()">Prüfen</button>
 
  
                       <script>
@@ -218,7 +273,7 @@ f<sub>(x)</sub> = -(1/20)x<sup>5</sup> - (7/75)x<sup>4</sup> - (11/ <input type=
                          
                       </script>
 
-<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a></div></main>
                     
         <script>
             document.body.addEventListener("input", function(inputEvent) {
