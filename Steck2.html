@@ -24,7 +24,7 @@
        main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
 h1 { font-size: 1.5rem; }
 h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
-.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 3.5rem; }
 .check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
 .br-mobil {
             display: none;}
@@ -107,16 +107,16 @@ hat in (-1|4)einen Extremwert und schneidet die
 x-Achse an der Stelle (-2|0) mit einer Steigung 
 von 9. Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = x<sup>3</sup> <input type="text" id="Eintrag18" maxlength="2"  ></input> x + 2 <button id="Pruef18" onclick="Aufgabe18()">Prüfen</button></p>
+f<sub>(x)</sub> = x<sup>3</sup> - <input type="text" id="Eintrag18" maxlength="1"  ></input> x + 2 <button id="Pruef18" onclick="Aufgabe18()">Prüfen</button></p>
     
  
                       <script>
                         function Aufgabe18() { 
                                                 
-                          if (Eintrag18.value=="-3") {alert("Richtig"); document.getElementById("Pruef18").disabled= true;
+                          if (Eintrag18.value=="3") {alert("Richtig"); document.getElementById("Pruef18").disabled= true;
                           }  
                            
-                          else if (Eintrag18.value!=="-3" && Eintrag18.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag18").value="-3"; window.open('Steck_Aufgabe18.html');           
+                          else if (Eintrag18.value!=="3" && Eintrag18.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag18").value="3"; window.open('Steck_Aufgabe18.html');           
                           document.getElementById("Pruef18").disabled= true;}
                                
                           else if (Eintrag18.value=="") {alert("Bitte eine Eingabe machen")}}
@@ -409,7 +409,7 @@ Wie lautet seine Funktionsgleichung?</p>
   <h2>Aufgabe 34</h2><p>
 
 Der Graph einer ganzrationalen Funktion 3. Grades 
-berührtdie x-Achse im Koordinatenursprung, geht 
+berührt die x-Achse im Koordinatenursprung, geht 
 durch den Punkt(-3|0) und hat dort die Steigung 9. 
 Wie lautet seine Funktionsgleichung?</p>
 
