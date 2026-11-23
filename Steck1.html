@@ -24,7 +24,7 @@
        main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
 h1 { font-size: 1.5rem; }
 h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
-.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 2rem; }
 .check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
 .br-mobil {
             display: none;}
@@ -104,19 +104,19 @@ Wie lautet seine Funktionsgleichung?</p>
   <h2>Aufgabe 2</h2><p>
 
 Der Graph einer ganzrationalen Funktion 2. Grades 
-schneidet die x-Achse bei 4 und -4. Bei x = 4 
+schneidet die x-Achse bei 4 und -4. Bei <br class ="br-mobil">x = 4 
 schneidet er sie unter einem Winkel von 45°. 
 Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = 0,125x<sup>2</sup> <input type="text" id="Eintrag2" maxlength="2"  ></input> <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = 0,125x<sup>2</sup> - <input type="text" id="Eintrag2" maxlength="1"  ></input> <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe2() { 
                                                 
-                          if (Eintrag2.value=="-2") {alert("Richtig"); document.getElementById("Pruef2").disabled= true;
+                          if (Eintrag2.value=="2") {alert("Richtig"); document.getElementById("Pruef2").disabled= true;
                           }  
                            
-                          else if (Eintrag2.value!=="-2" && Eintrag2.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag2").value="-2"; window.open('Steck_Aufgabe2.html');           
+                          else if (Eintrag2.value!=="2" && Eintrag2.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag2").value="2"; window.open('Steck_Aufgabe2.html');           
                           document.getElementById("Pruef2").disabled= true;}
                                
                           else if (Eintrag2.value=="") {alert("Bitte eine Eingabe machen")}}
@@ -137,7 +137,7 @@ Wie lautet seine Funktionsgleichung?</p>
 <button  onclick="window.open('Steck_Aufgabe3.html');" >Lösung</button></pre></p>
 
 
-<!--//Aufgabe 4-->4
+<!--//Aufgabe 4-->
 
 <h2>Aufgabe 4</h2><p>
 
@@ -145,7 +145,7 @@ Der Graph einer ganzrationalen Funktion 2. Grades
 geht durch die Punkte (0|0), (1|0) und (2|3). 
 Wie lautet seine Funktionsgleichung?</p>
            
-f<sub>(x)</sub> = 1,5x<sup>2</sup> - <input type="text" id="Eintrag4" maxlength="3"  ></input> x <button id="Pruef4" onclick="Aufgabe4()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = 1,5x<sup>2</sup> - <input type="text" id="Eintrag4" maxlength="3"  ></input>x <button id="Pruef4" onclick="Aufgabe4()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe4() { 
@@ -182,7 +182,7 @@ Alle Graphen einer ganzrationalen Funktion
 Wie lautet die Funktionsgleichung dieser 
 Kurvenschar?</p>
 
-f<sub>(x)</sub> = ax<sup>2</sup> - <input type="text" id="Eintrag6" maxlength="2"  ></input> <button id="Pruef6" onclick="Aufgabe6()">Prüfen</button> </p></pre>
+f<sub>(x)</sub> = ax<sup>2</sup> - <input type="text" id="Eintrag6" maxlength="2"  ></input> <button id="Pruef6" onclick="Aufgabe6()">Prüfen</button> </p>
  
                       <script>
                         function Aufgabe6() { 
@@ -208,7 +208,7 @@ lautet die Funktionsgleichung dieser Kurvenschar?</p>
 
 <img src="Aufgabe7.jpg" ></p>
  
-<button  onclick="window.open('Steck_Aufgabe7.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Steck_Aufgabe7.html');" >Lösung</button></p>
 
 <!--//Aufgabe 8-->
 
@@ -219,7 +219,7 @@ geht durch die Punkte A(0|2) und B(6|8) und
 berührt die x-Achse im Punkt (c|0). 
 Wie lautet seine Funktionsgleichung?</p>      
 
-f<sub>(x)</sub> = 0,5(x - <input type="text" id="Eintrag8" maxlength="1"  ></input> )<sup>2</sup> <button id="Pruef8" onclick="Aufgabe8()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = 0,5(x - <input type="text" id="Eintrag8" maxlength="1"  ></input>)<sup>2</sup> <button id="Pruef8" onclick="Aufgabe8()">Prüfen</button></p>
      
                       <script>
                         function Aufgabe8() { 
@@ -245,7 +245,7 @@ lautet die Funktionsgleichung dieser Kurvenschar?</p>
 
 <img src="Aufgabe9.jpg" ></p>
 
-<button  onclick="window.open('Steck_Aufgabe9.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Steck_Aufgabe9.html');" >Lösung</button></p>
 
 <!--//Aufgabe 10-->
 
@@ -255,7 +255,7 @@ Der Graph einer ganzrationalen Funktion 2. Grades
 geht durch die Punkte (-1|2), (1|3) und (3|2). 
 Wie lautet seine Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = 0,25x<sup>2</sup> + <input type="text" id="Eintrag10" maxlength="3"  ></input> x + 2,75 <button id="Pruef10" onclick="Aufgabe10()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = 0,25x<sup>2</sup> + <input type="text" id="Eintrag10" maxlength="3"  ></input>x + 2,75 <button id="Pruef10" onclick="Aufgabe10()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe10() { 
@@ -281,7 +281,7 @@ Wie lautet seine Funktionsgleichung?</p>
 
 <img src="Aufgabe11.jpg" ></p>
 
-<button  onclick="window.open('Steck_Aufgabe11.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Steck_Aufgabe11.html');" >Lösung</button></p>
 
 <!--//Aufgabe 12-->
 
@@ -292,7 +292,7 @@ Alle Graphen einer ganzrationalen Funktion
 (0|-4). Wie lautet die Funktionsgleichung 
 dieser Kurvenschar?</p>
 
-f<sub>(x)</sub> = ax<sup>2</sup> + (4a - 1)x - <input type="text" id="Eintrag12" maxlength="1"  ></input> <button id="Pruef12" onclick="Aufgabe12()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = ax<sup>2</sup> + (4a - 1)x - <input type="text" id="Eintrag12" maxlength="1"  ></input> <button id="Pruef12" onclick="Aufgabe12()">Prüfen</button></p>
 
  
                       <script>
@@ -318,7 +318,7 @@ Punkt (0|-2). Wie lautet ihre Funktionsgleichung?</p>
 
 <img src="Aufgabe13.jpg" ></p>
 
-<button  onclick="window.open('Steck_Aufgabe13.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Steck_Aufgabe13.html');" >Lösung</button></p>
 
 <!--//Aufgabe 14-->
 
@@ -328,7 +328,7 @@ Eine nach unten geöffnete Normalparabel hat ihren
 Scheitelpunkt im Punkt (4|0). 
 Wie lautet ihre Funktionsgleichung?</p>
        
-f<sub>(x)</sub> = - (x - <input type="text" id="Eintrag14" maxlength="1"  ></input> )<sup>2</sup> <button id="Pruef14" onclick="Aufgabe14()">Prüfen</button></p></pre>
+f<sub>(x)</sub> = - (x - <input type="text" id="Eintrag14" maxlength="1"  ></input>)<sup>2</sup> <button id="Pruef14" onclick="Aufgabe14()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe14() { 
@@ -353,7 +353,7 @@ Wie lautet ihre Funktionsgleichung?</p>
 
 <img src="Aufgabe15.jpg" ></p>
 
-<button  onclick="window.open('Steck_Aufgabe15.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Steck_Aufgabe15.html');" >Lösung</button></p>
 
 <!--//Aufgabe 16-->
 
@@ -363,15 +363,15 @@ Eine um den Faktor 0,5 gestauchte und nach oben
 geöffnete Parabel geht durch die Punkte (4|0) 
 und (2|0). Wie lautet ihre Funktionsgleichung?</p>
 
-f<sub>(x)</sub> = 0,5x<sup>2</sup> <input type="text" id="Eintrag16" maxlength="2"  ></input> x + 4 <button id="Pruef16" onclick="Aufgabe16()">Prüfen</button></p>
+f<sub>(x)</sub> = 0,5x<sup>2</sup> - <input type="text" id="Eintrag16" maxlength="1"  ></input>x + 4 <button id="Pruef16" onclick="Aufgabe16()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe16() { 
                                                 
-                          if (Eintrag16.value=="-3") {alert("Richtig"); document.getElementById("Pruef16").disabled= true;
+                          if (Eintrag16.value=="3") {alert("Richtig"); document.getElementById("Pruef16").disabled= true;
                           }  
                            
-                          else if (Eintrag16.value!=="-3" && Eintrag16.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag16").value="-3"; window.open('Steck_Aufgabe16.html');           
+                          else if (Eintrag16.value!=="3" && Eintrag16.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag16").value="3"; window.open('Steck_Aufgabe16.html');           
                           document.getElementById("Pruef16").disabled= true;}
                                
                           else if (Eintrag16.value=="") {alert("Bitte eine Eingabe machen")}}
